@@ -34,9 +34,9 @@ The manager will wait until it is told to go to the next screen. To do this you 
 
 This option allows you to set up a condition where some properties and values are compared. In the screenshot the last screen has this rule so that it stays active until the Blox Game Systems Bootstrap is done loading scenes in the background. In this case the last screen would be something which shows some text to indicate that loading is in progress.
 
-The Bootstrap's `IsDone` property is watched and compared against a constant value. 
+The Bootstrap's `IsDone` property is watched and compared against a constant value.
 
-You can click on the 1st or 3rd button to bring up the [Data Binding window](blox-databinding.md). This allows you to select what to bind to and watch for changes.
+You can click on the 1st or 3rd button to bring up the [Data Binding window](blox-databinding). This allows you to select what to bind to and watch for changes.
 
 Note that the middle button `==` can be changed when you click on it.
 
