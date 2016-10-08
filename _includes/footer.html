@@ -2,7 +2,7 @@
 <div class="row">    
 <div class="col-lg-12 footer">
 {% if site.github_editme_path %}
-<a target="_blank" href="https://github.com/{{site.github_editme_path}}/pages/{{page.folder}}/{{page.url | remove: "/" | append: ".md"}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+<a target="_blank" href="https://github.com/{{site.github_editme_path}}/_pages/{{page.folder}}/{{page.url | remove: "/" | append: ".md"}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 {% endif %}
    
 &copy;{{ site.time | date: "%Y"  }} {{site.company_name}}. All rights reserved. <br />
