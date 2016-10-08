@@ -1,0 +1,38 @@
+
+entries:
+- title: sidebar
+  product: TileEd
+  version: 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: TileEd
+    output: web, pdf
+    folderitems:
+    - title: TileEd
+      url: /tile-ed.html
+      output: web, pdf
+    - title: Setup
+      url: /tile-ed-setup.html
+      output: web, pdf
+    - title: Auto-tiles
+      url: /tile-ed-auto-tiles.html
+      output: web, pdf
+    - title: TileEd Map
+      url: /tile-ed-map.html
+      output: web, pdf
+    - title: Advanced
+      url: /tile-ed-api.html
+      output: web, pdf

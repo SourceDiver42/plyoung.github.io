@@ -1,0 +1,173 @@
+
+entries:
+- title: sidebar
+  product: plyGame
+  version: 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: plyGame
+    output: web, pdf
+    folderitems:
+    - title: plyGame
+      url: /plygame.html
+      output: web, pdf
+    - title: Introduction
+      url: /plygame-intro.html
+      output: web, pdf
+
+  - title: Main Editor
+    output: web, pdf
+    folderitems:
+    - title: Main Editor
+      url: /plygame-main-editor.html
+      output: web, pdf
+    - title: Project Settings
+      url: /plygame-project-settings.html
+      output: web, pdf
+    - title: System Settings
+      url: /plygame-system-settings.html
+      output: web, pdf
+    - title: Input Settings
+      url: /plygame-input-settings.html
+      output: web, pdf
+    - title: Sound Settings
+      url: /plygame-sound-settings.html
+      output: web, pdf
+    - title: Load and Save
+      url: /plygame-loadsave.html
+      output: web, pdf
+    - title: Auto Instantiate
+      url: /plygame-auto-instantiate.html
+      output: web, pdf
+    - title: Attributes
+      url: /plygame-attributes.html
+      output: web, pdf
+    - title: Skills
+      url: /plygame-skills.html
+      output: web, pdf
+    - title: Factions
+      url: /plygame-factions.html
+      output: web, pdf
+
+  - title: Actors
+    output: web, pdf
+    folderitems:
+    - title: Actor
+      url: /plygame-actor.html
+      output: web, pdf
+    - title: Actor Class
+      url: /plygame-actor-classes.html
+      output: web, pdf
+    - title: Actors List
+      url: /plygame-actors-list.html
+      output: web, pdf
+    - title: Camera
+      url: /plygame-camera.html
+      output: web, pdf
+    - title: Animation
+      url: /plygame-character-animation.html
+      output: web, pdf
+    - title: Characters
+      url: /plygame-camera.html
+      output: web, pdf
+    - title: Player
+      url: /plygame-player.html
+      output: web, pdf
+    - title: Player Manager
+      url: /plygame-player-manager.html
+      output: web, pdf
+    - title: NPC
+      url: /plygame-npc.html
+      output: web, pdf
+
+  - title: Systems
+    output: web, pdf
+    folderitems:
+    - title: Items
+      url: /plygame-item.html
+      output: web, pdf      
+    - title: Loot
+      url: /plygame-loot.html
+      output: web, pdf      
+    - title: Objects
+      url: /plygame-object.html
+      output: web, pdf      
+    - title: Markers
+      url: /plygame-markers.html
+      output: web, pdf
+    - title: Area Trigger
+      url: /plygame-area-trigger.html
+      output: web, pdf
+    - title: Location Marker
+      url: /plygame-location-marker.html
+      output: web, pdf
+    - title: Spawn Point
+      url: /plygame-spawn-point.html
+      output: web, pdf
+    - title: Waypoint Path
+      url: /plygame-waypoint-path.html
+      output: web, pdf
+    - title: Simple Customizer
+      url: /plygame-simple-customizer.html
+      output: web, pdf
+    - title: Languages
+      url: /plygame-languages.html
+      output: web, pdf
+    - title: Components
+      url: /plygame-misc-components.html
+      output: web, pdf
+
+  - title: plyBlox
+    output: web, pdf
+    folderitems:
+    - title: plyBlox
+      url: /plyblox.html
+      output: web, pdf
+
+  - title: DiaQ
+    output: web, pdf
+    folderitems:      
+    - title: DiaQ
+      url: /plygame-diaq.html
+      output: web, pdf
+    - title: Data Provider
+      url: /plygame-dataprovider.html
+      output: web, pdf
+
+  - title: GUI
+    output: web, pdf
+    folderitems:      
+    - title: Sample UI
+      url: /plygame-rpg-ui.html
+      output: web, pdf
+    - title: Screens System
+      url: /plygame-screens.html
+      output: web, pdf
+
+  - title: Advanced
+    output: web, pdf
+    folderitems:      
+    - title: Custom Editor
+      url: /plygame-custom-editor.html
+      output: web, pdf
+    - title: Camera Controller
+      url: /plygame-new-camera-controller.html
+      output: web, pdf
+    - title: Character Controller
+      url: /plygame-new-character-controller.html
+      output: web, pdf
+
+

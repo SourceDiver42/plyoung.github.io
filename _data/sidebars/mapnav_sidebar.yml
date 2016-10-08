@@ -1,0 +1,26 @@
+
+entries:
+- title: sidebar
+  product: MapNav
+  version: 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: MapNav
+    output: web, pdf
+    folderitems:
+    - title: MapNav
+      url: /mapnav.html
+      output: web, pdf

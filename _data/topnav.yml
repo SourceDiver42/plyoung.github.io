@@ -1,0 +1,26 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+#  items:
+#    - title: News
+#      url: http://forum.plyoung.com/
+
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: Unity
+      folderitems:
+        - title: Blox
+          url: /blox.html
+        - title: TileEd
+          url: /tile-ed.html
+        - title: plyGame
+          url: /plygame.html
+        - title: UniRPG
+          url: /unirpg.html
+        - title: Vinoma
+          url: /vinoma.html
+        - title: MapNav
+          url: /mapnav.html

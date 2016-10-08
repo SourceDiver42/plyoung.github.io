@@ -1,0 +1,120 @@
+
+entries:
+- title: sidebar
+  product: UniRPG
+  version: 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: UniRPG
+    output: web, pdf
+    folderitems:
+    - title: UniRPG
+      url: /unirpg.html
+      output: web, pdf
+    - title: Actors
+      url: /unirpg-actors.html
+      output: web, pdf
+    - title: Items
+      url: /unirpg-items.html
+      output: web, pdf
+    - title: Objects
+      url: /unirpg-objects.html
+      output: web, pdf
+    - title: Triggers
+      url: /unirpg-triggers.html
+      output: web, pdf
+
+  - title: Database
+    output: web, pdf
+    folderitems:
+    - title: Database
+      url: /unirpg-database.html
+      output: web, pdf
+    - title: GUI
+      url: /unirpg-database-gui.html
+      output: web, pdf
+    - title: Cameras
+      url: /unirpg-database-cameras.html
+      output: web, pdf
+    - title: Attributes
+      url: /unirpg-database-attribs.html
+      output: web, pdf
+    - title: Classes
+      url: /unirpg-database-classes.html
+      output: web, pdf
+    - title: Skills
+      url: /unirpg-database-skills.html
+      output: web, pdf
+    - title: States
+      url: /unirpg-database-states.html
+      output: web, pdf
+    - title: Events
+      url: /unirpg-database-events.html
+      output: web, pdf
+
+  - title: Actors
+    output: web, pdf
+    folderitems:
+    - title: Actors
+      url: /unirpg-actors.html
+      output: web, pdf
+    - title: Default Characters
+      url: /unirpg-actors-default.html
+      output: web, pdf
+    - title: Patrol Path
+      url: /unirpg-actors-path.html
+      output: web, pdf
+    - title: Spawn Point
+      url: /unirpg-actors-spawn.html
+      output: web, pdf
+      
+  - title: Actions
+    output: web, pdf
+    folderitems:
+    - title: Actions
+      url: /unirpg-actions.html
+      output: web, pdf
+    - title: Actor Actions
+      url: /unirpg-actions-actor.html
+      output: web, pdf
+    - title: Object Actions
+      url: /unirpg-actions-object.html
+      output: web, pdf
+    - title: System Actions
+      url: /unirpg-actions-sys.html
+      output: web, pdf
+
+  - title: Advanced
+    output: web, pdf
+    folderitems:
+    - title: Creating Plugins
+      url: /unirpg-advanced.html
+      output: web, pdf
+    - title: Creating new Actions
+      url: /unirpg-advanced-actions.html
+      output: web, pdf
+    - title: Cameras
+      url: /unirpg-advanced-camera.html
+      output: web, pdf
+    - title: Creating a GUI Theme
+      url: /unirpg-advanced-gui.html
+      output: web, pdf
+    - title: Input Binder
+      url: /unirpg-advanced-input.html
+      output: web, pdf
+    - title: Loading and Saving
+      url: /unirpg-advanced-loadsave.html
+      output: web, pdf

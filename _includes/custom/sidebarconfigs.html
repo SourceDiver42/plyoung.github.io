@@ -1,0 +1,53 @@
+{% if page.sidebar == "home_sidebar" %}
+{% assign sidebar = site.data.sidebars.home_sidebar.entries %}
+
+{% elsif page.sidebar == "blox_sidebar" %}
+{% assign sidebar = site.data.sidebars.blox_sidebar.entries %}
+
+{% elsif page.sidebar == "tile_sidebar" %}
+{% assign sidebar = site.data.sidebars.tile_sidebar.entries %}
+
+{% elsif page.sidebar == "plygame_sidebar" %}
+{% assign sidebar = site.data.sidebars.plygame_sidebar.entries %}
+
+{% elsif page.sidebar == "unirpg_sidebar" %}
+{% assign sidebar = site.data.sidebars.unirpg_sidebar.entries %}
+
+{% elsif page.sidebar == "vinoma_sidebar" %}
+{% assign sidebar = site.data.sidebars.vinoma_sidebar.entries %}
+
+{% elsif page.sidebar == "mapnav_sidebar" %}
+{% assign sidebar = site.data.sidebars.mapnav_sidebar.entries %}
+
+{% else %}
+{% assign sidebar = site.data.sidebars.home_sidebar.entries %}
+{% endif %}
+
+
+{% comment %}
+sidebar configuration for print files
+{% endcomment %}
+
+{% if site.product == "blox" %}
+{% assign sidebar = site.data.sidebars.blox_sidebar.entries %}
+{% endif %}
+
+{% if site.product == "tile-ed" %}
+{% assign sidebar = site.data.sidebars.tile_sidebar.entries %}
+{% endif %}
+
+{% if site.product == "plygame" %}
+{% assign sidebar = site.data.sidebars.plygame_sidebar.entries %}
+{% endif %}
+
+{% if site.product == "unirpg" %}
+{% assign sidebar = site.data.sidebars.unirpg_sidebar.entries %}
+{% endif %}
+
+{% if site.product == "vinoma" %}
+{% assign sidebar = site.data.sidebars.vinoma_sidebar.entries %}
+{% endif %}
+
+{% if site.product == "mapnav" %}
+{% assign sidebar = site.data.sidebars.mapnav_sidebar.entries %}
+{% endif %}

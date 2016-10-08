@@ -1,0 +1,141 @@
+/*
+body, p, a, h1, h2, h3, nav, div, table {font-family:'Open Sans','PT Sans','Lato','Ubuntu','Droid Sans',sans-serif}
+body, p, h1, h2, h3, nav, div, table {color:#333333}
+.use-img-shadow img{box-shadow: 0 0 6px 1px rgba(0,0,0,0.3)}
+.off-canvas-wrap{z-index:97}
+.left-submenu{height:auto}
+.text-foot{font-size:1.6rem;text-align:center !important}
+.main-section{margin:1rem;border:none}
+ul.off-canvas-list li label.ply-menu-head{background:#333333;color:#FFFFFF;font-size:1.2rem;text-transform:none}
+ul.off-canvas-list li ul.ply-blocks a{font-size:1rem;border:none}
+ul.off-canvas-list li a.plydoc{padding:0.4rem;font-size:0.9rem}
+ul.off-canvas-list li a.ply-mini-button{padding:0 5px;border:0;font-size:1.2rem;margin:-5px 0 0 0}
+.left-off-canvas-menu, .left-submenu{background:#3a3e44}
+.button.tiny.ply{font-size:1.2rem;padding:0.5rem 1rem 0.4rem}
+.button.tiny.soc{font-size:1.2rem;padding:0.5rem 1rem 0.4rem;margin:2px 2px 0 0;background-color:transparent;}
+.button.tiny.soc:hover,.button.tiny.soc:focus{background-color:#b9b9b9;color:#333333}
+.ply-product{background-color:#FFFFFF;padding:0.5rem 0.625rem;margin:0.2rem}
+.label.bigger{font-size:0.75rem}
+.side-nav{padding:0;border-left:1px solid rgba(0, 0, 0, 0.1);margin:3rem 0 3rem 0.5rem;background:#ffffff}
+.side-nav li{margin:0}
+.side-nav li a:not(.button){padding:0.1rem 0 0.1rem 0.4rem;font-size:0.8rem}
+.ply-banner{display:block;margin-bottom:0.1rem}
+.clearing-blackout{z-index:2000}
+.clearing-close{top:50px}
+.tile-set-stats{margin:0 0 15px 0;font-size:1rem;max-width:620px;max-height:120px}
+.tile-set-stats div{display:inline-block}
+.tile-set-stats i{maring:0;padding:0.2rem 0.35rem;color:#ddd;display:inline-block;background-color:#333;cursor:help}
+.tile-set-stats i:hover,.tile-set-stats ifocus{border-bottom:solid 1px #555;color:#fff}
+.tile-set-stats a i{cursor:pointer}
+.tile-set-stats i.ico-tube2{background-color:#CC0000}
+.tile-set-stats i.ico-unity{background-color:#0179d1}
+@media only screen and (min-width:64.063em){
+	.left-off-canvas-menu{-ms-transform:none;-webkit-transform:none;-moz-transform:none;-o-transform:none;transform:none;z-index:1003;position:fixed;}
+	.main-section{margin-left:17.5rem;max-width:62.5rem}}
+.codehilite{border:1px solid #aaa;padding:0.7rem;margin-bottom: 1.25rem;overflow-x:auto}
+.codehilite .ge{font-style:italic}
+.codehilite .gh,.codehilite .gp,.codehilite .gs,.codehilite .gu{font-weight:bold}
+.codehilite .hll{background-color:#ffffcc}
+.codehilite .err{border: 1px solid #FF0000}
+.codehilite .kt,.codehilite .nc{color:#2b91af}
+.codehilite .c,.codehilite .cm,.codehilite .c1,.codehilite .cs{color:#008000}
+.codehilite .k, .codehilite .cp,.codehilite .kc,.codehilite .kd,.codehilite .kn,.codehilite .kp,.codehilite .kr,.codehilite .ow{color:#0000ff}
+.codehilite .s,.codehilite .sb,.codehilite .sc,.codehilite .sd,.codehilite .s2,.codehilite .se,.codehilite .sh,.codehilite .si,.codehilite .sx,.codehilite .sr,.codehilite .s1,.codehilite .ss{color:#a31515}
+*/
+
+@font-face {
+	font-family:'plyoung_icons';
+	src:url('plyoung_icons.eot?wylzlo');
+	src:url('plyoung_icons.eot?wylzlo#iefix') format('embedded-opentype'),
+		url('plyoung_icons.ttf?wylzlo') format('truetype'),
+		url('plyoung_icons.woff?wylzlo') format('woff'),
+		url('plyoung_icons.svg?wylzlo#plyoung_icons') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+i.ply {
+	font-family: 'plyoung_icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.ico-support:before {
+	content: "\e053";
+}
+.ico-contact:before {
+	content: "\e07c";
+}
+.ico-star2:before {
+	content: "\e260";
+}
+.ico-star1:before {
+	content: "\e261";
+}
+.ico-star0:before {
+	content: "\e262";
+}
+.ico-games:before {
+	content: "\e2e2";
+}
+.ico-info:before {
+	content: "\f05a";
+}
+.ico-store:before {
+	content: "\f07a";
+}
+.ico-linkd:before {
+	content: "\f08c";
+}
+.ico-twit:before {
+	content: "\f099";
+}
+.ico-tile-simple:before {
+	content: "\f0c8";
+}
+.ico-gplus:before {
+	content: "\f0d4";
+}
+.ico-forum:before {
+	content: "\f0e6";
+}
+.ico-tube:before {
+	content: "\f167";
+}
+.ico-tube2:before {
+	content: "\f16a";
+}
+.ico-blox:before {
+	content: "\f1b2";
+}
+.ico-fb:before {
+	content: "\f230";
+}
+.ico-diaq:before {
+	content: "\f27b";
+}
+.ico-unirpg:before {
+	content: "\e905";
+}
+.ico-tileed:before {
+	content: "\e904";
+}
+.ico-vinoma:before {
+	content: "\e902";
+}
+.ico-mapnav:before {
+	content: "\e903";
+}
+.ico-plyoung:before {
+	content: "\e901";
+}
+.ico-unity:before {
+	content: "\e900";
+}
+

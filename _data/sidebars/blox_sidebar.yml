@@ -1,0 +1,82 @@
+
+entries:
+- title: sidebar
+  product: Blox Visual Scripting
+  version: 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: Blox Visual Scripting
+    output: web, pdf
+    folderitems:
+    - title: Blox
+      url: /blox.html
+      output: web, pdf
+    - title: Get started
+      url: /blox-start.html
+      output: web, pdf
+    - title: Blox Global
+      url: /blox-global.html
+      output: web, pdf
+    - title: Blox Container
+      url: /blox-container.html
+      output: web, pdf
+    - title: Event Handlers
+      url: /blox-eventhandler.html
+      output: web, pdf
+    - title: Blox Themes
+      url: /blox-themes.html
+      output: web, pdf
+    - title: Custom Events
+      url: /blox-custom-events.html
+      output: web, pdf
+    - title: Custom Blocks
+      url: /blox-custom-blocks.html
+      output: web, pdf
+
+  - title: Common Systems
+    output: web, pdf
+    folderitems:
+    - title: Variables
+      url: /blox-variables.html
+      output: web, pdf
+    - title: Data Binding
+      url: /blox-databinding.html
+      output: web, pdf
+    - title: Components
+      url: /blox-components.html
+      output: web, pdf
+
+  - title: Game Systems
+    output: web, pdf
+    folderitems:
+    - title: Startup & Scenes
+      url: /blox-scenes.html
+      output: web, pdf
+    - title: Properties Manager
+      url: /blox-property-manager.html
+      output: web, pdf
+    - title: Settings Manager
+      url: /blox-settings-manager.html
+      output: web, pdf
+    - title: Splash Screens
+      url: /blox-splash-screens-manager.html
+      output: web, pdf
+    - title: Window Manager
+      url: /blox-window-manager.html
+      output: web, pdf
+    - title: UI Updaters
+      url: /blox-ui-updaters.html
+      output: web, pdf

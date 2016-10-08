@@ -1,0 +1,35 @@
+
+entries:
+- title: sidebar
+  product: Vinoma
+  version: 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: Vinoma
+    output: web, pdf
+    folderitems:
+    - title: Vinoma
+      url: /vinoma.html
+      output: web, pdf
+    - title: Getting Started
+      url: /vinoma-start.html
+      output: web, pdf
+    - title: Guides
+      url: /vinoma-guides.html
+      output: web, pdf
+    - title: Actions
+      url: /vinoma-actions.html
+      output: web, pdf
