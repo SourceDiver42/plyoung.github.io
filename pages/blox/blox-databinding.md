@@ -10,7 +10,7 @@ folder: blox
 Data Binding
 ============
 
-The Blox Data Binding system supports other systems in making it easier to check data and perform actions without having to write code. The [Splash Screens Manager](blox-splash-screens-manager) is one such system where it allows you to set up a condition, checking for a change of values before taking action.
+The Blox Data Binding system supports other systems in making it easier to check data and perform actions without having to write code. The [Splash Screens Manager](blox-splash-screens-manager.html) is one such system where it allows you to set up a condition, checking for a change of values before taking action.
 
 **NOTE** This system is still under development and might change. Some features will not be available yet.
 
