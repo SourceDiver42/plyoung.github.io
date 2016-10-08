@@ -11,7 +11,7 @@ site_title: PLYOUNG
 company_name: PLYOUNG
 # this appears in the footer
 
-github_editme_path: PLYoung/plyoung.github.io
+github_editme_path: plyoung/plyoung.github.io
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 disqus_shortname: 
@@ -105,3 +105,5 @@ description: "plyoung website"
 
 # needed for sitemap.xml file only
 url: http://plyoung.com
+#url: plyoung.github.io
+#baseurl: /myreponame 
