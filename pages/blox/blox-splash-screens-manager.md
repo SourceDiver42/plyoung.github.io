@@ -36,7 +36,7 @@ This option allows you to set up a condition where some properties and values ar
 
 The Bootstrap's `IsDone` property is watched and compared against a constant value.
 
-You can click on the 1st or 3rd button to bring up the [Data Binding window](blox-databinding). This allows you to select what to bind to and watch for changes.
+You can click on the 1st or 3rd button to bring up the [Data Binding window](blox-databinding.html). This allows you to select what to bind to and watch for changes.
 
 Note that the middle button `==` can be changed when you click on it.
 
