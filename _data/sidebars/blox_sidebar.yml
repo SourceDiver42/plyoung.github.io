@@ -111,5 +111,7 @@ entries:
     - title: Character Stats
       url: /tbrpg-stats.html
       output: web, pdf
-
+    - title: Map Transition
+      url: /tbrpg-map-transition.html
+      output: web, pdf
 

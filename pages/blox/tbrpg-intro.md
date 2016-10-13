@@ -27,6 +27,8 @@ The Blox package should be installed before installing the TBRPG package. This d
 
 Make sure that `Auto-load Bootstrap` is *enabled* in the Blox Settings since TBRPG makes use of the Blox Game Systems.
 
+TBRPG adds various functions and properties which you might want to turn into Blox. Open the Blox Settings, click on [Block Setup] and then enter "TBRPGEngine" into the list and click [Scan Namespaces]. After the scan you will be presented with a list of types which can be turned into Blocks. Mark "TBRPGEngine" and then click [Save] to have it added to the available Blocks.
+
 TBRPG has a Global object which needs to be loaded as soon as possible since it contains references to game data and manages various parts of the game. The best place to put this is in your startup scene. I talk more about the startup sequence and the startup scene in this [video](https://www.youtube.com/watch?v=eFK7cvJQiiQ&list=PLuaBtUXEKcdLEhNpwuBnUQxfKYJHS6PcK&index=13).
 
 The startup scene topically holds objects which are set as DontDestroyOnLoad, meaning they will survive scene loads and will be present for the duration of the game session.

@@ -18,4 +18,6 @@ For a trigger to work there must be a Collider and RigidBody on the object(s) wh
 
 Optionally you may add the Trigger(s) to a unique Layer and configure what can interact with it in the [Layer Collision Matrix](https://docs.unity3d.com/Manual/LayerBasedCollision.html). You might for example tun off interaction between the floor and the trigger's layer. Menu: `Edit > Project Settings > Physics`
 
+The Area Trigger Blox Events can be found under `Game Systems > AreaTrigger`. They can be used in Blox on both the Area Trigger object and the Object which caused it to trigger.
+
 ![](img/blox/30.png)
