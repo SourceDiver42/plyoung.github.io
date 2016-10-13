@@ -1,5 +1,5 @@
 ---
-title: Turn Based RPG: Camera
+title: Turn Based RPG Camera
 keywords: unity3d, blox, visual scripting, programming
 sidebar: blox_sidebar
 toc: false
@@ -14,34 +14,50 @@ This controller provides a camera which acts similar to what you would expect in
 
 The camera can be configured in the BGS Main Window; `Blox > Game Systems Window > TBRPG > Camera`. Please have a look at the [Unity documentation](https://docs.unity3d.com/Manual/class-Camera.html) for information related to the general camera settings found at the bottom of this editor.
 
-Note that a `TBRPG` object (menu: `GameObject > Turn Based RPG > Main Controller`) must be present in all game map/ level scenes since it will add the camera to the scene at runtime/ play-time. You should remove any camera that was automatically added to the scene when you create a new scene.
+Note that a `TBRPG` object (menu: `GameObject > Turn Based RPG > Main Controller`) must be present in all game map/ level scenes since it will add the camera to the scene at runtime/ play-time.
 
-TODO
+You should remove any camera that was automatically added to the scene when you create a new scene.
 
-<!--
-- **offset**: Offset the camera pivot by this position. This is useful to have the camera look at the target's head rather than feet.
-- **followSpeed**: Speed the camera uses to catch up when following a target.
-		[Tooltip("Enabling this will move any existing AudioListener object into the camera hierarchy that it follows the camera. Note that it moves the complete object that the AudioListener is on. If there is no existing AudioListener a new one will be created.")]
-		public bool attachAudioListener = true;
+Properties
+----------
 
-Rotation
+```
+[Tooltip("Offset the camera pivot by this position. This is useful to have the camera look at the target's head rather than feet.")]
+public Vector3 offset = new Vector3(0f, 1.8f, -1f);
+[Tooltip("Speed the camera uses to catch up when following a target.")]
+public float followSpeed = 7f;
+[Tooltip("Enabling this will cause any existing AudioListener object to follow the camera. If there is no existing AudioListener a new one will be created on the camera object. The AudioListener will follow the pivot object of the camera which is closer to the ground than the actual camera object.")]
+public bool attachAudioListener = true;
 
-- **canRotate**: Can this camera be rotated?
-- **rotation**: Initial rotation.
-- **rotateSpeed**: How fast camera can be rotated.
-- **inverseRotation**: Set to -1 to inverse rotation input, else 1.
-- **minRotation**: Minimum allowed rotation angle.
-- **maxRotation**: Maximum allowed rotation angle.
+[Header("Rotation")]
+[Tooltip("Can this camera be rotated?")]
+public bool canRotate = true;		
+[Tooltip("Initial rotation.")]
+public float rotation = 0f;
+[Tooltip("How fast camera can be rotated.")]
+public float rotateSpeed = 200f;
+[Tooltip("Set to -1 to inverse rotation input, else 1.")]
+public float inverseRotation = 1f;
+[Tooltip("Minimum allowed rotation angle.")]
+public float minRotation = -360f;
+[Tooltip("Maximum allowed rotation angle.")]
+public float maxRotation = 360f;
 
-Tilt
-
-- **canTilt**: Can this camera be tilted up/down?
-- **zoomTilt**: If this option is on then a tilt angle will be applied relative to the zoom and tilt min/max values when the camera zoom in or out. 'canTilt' should be off if this is on since you do not want the player to control the tilt in such a case.
-- **tilt**: Initial tilt.
-- **tiltSpeed**: How fast camera can be tilted.
-- **inverseTilt**: Set to -1 to inverse tilt input, else 1.
-- **minTilt**: Minimum allowed tilt angle.
-- **maxTilt**: Maximum allowed tilt angle.
+[Header("Tilt")]
+[Tooltip("Can this camera be tilted up/down?")]		
+public bool canTilt = false;
+[Tooltip("If this option is on then a tilt angle will be applied relative to the zoom and tilt min/max values when the camera zoom in or out. 'canTilt' should be off if this is on since you do not want the player to control the tilt in such a case.")]
+public bool zoomTilt = true;
+[Tooltip("Initial tilt.")]
+public float tilt = 45f;
+[Tooltip("How fast camera can be tilted.")]
+public float tiltSpeed = 200f;
+[Tooltip("Set to -1 to inverse tilt input, else 1.")]
+public float inverseTilt = -1f;
+[Tooltip("Minimum allowed tilt angle.")]
+public float minTilt = 40f;
+[Tooltip("Maximum allowed tilt angle.")]
+public float maxTilt = 55f;
 
 [Header("Zoom")]
 [Tooltip("Can this camera zoom in/out?")]		
@@ -64,30 +80,18 @@ public float zoomSmooth = 0.1f;
 public bool canPan = true;
 [Tooltip("How fast camera can be moved by player input.")]
 public float moveSpeed = 50f;
+[Tooltip("How much faster or slower to move the camera when zoomed in relative to when zoomed out.")]
+public float TODO_zoomedMoveSpeedMulti = 1f;
 
 [Header("Clipping")]
 [Tooltip("This is used to determine if there is an obstacle between the camera and its pivot or follow target. The camera will attempt to auto zoom towards the pivot to get in front of the obstacle. Set this to the collision layers that should be checked.")]
-private LayerMask clipCheckMask = 0;
+public LayerMask clipCheckMask = 0;
 [Tooltip("How fast to move forward when there is an obstacle in the way.")]
-private float clipMoveTime = 0.05f;
+public float clipMoveTime = 0.05f;
 [Tooltip("How fast to move to original zoom position when no obstacle in way.")]
-private float returnTime = 0.4f;
+public float returnTime = 0.4f;
 [Tooltip("Determines how wide an area is used to determine if there is an obstacle between the camera and target.")]
-private float sphereCastRadius = 0.3f;
+public float sphereCastRadius = 0.3f;
 [Tooltip("The closest the camera is allowed to get to the target when there is obstacle in way.")]
-private float closestDistance = 0.5f;
-
-[Header("Input")]
-[Tooltip("The button to hold when wanting to rotate or tilt.")]
-public string holdForControlButton = "Fire2";
-[Tooltip("The axis to check for rotation input.")]
-public string rotateAxis = "Mouse X";
-[Tooltip("The axis to check for tilt input.")]
-public string tiltAxis = "Mouse Y";
-[Tooltip("The axis to check for zoom input.")]
-public string zoomAxis = "Mouse ScrollWheel";
-[Tooltip("The axis to check for horizontal (left/right) camera panning.")]
-public string hMoveAxis = "Horizontal";
-[Tooltip("The axis to check for vertical (forward/backward) camera panning.")]
-public string vMoveAxis = "Vertical";
--->
+public float closestDistance = 0.5f;
+```

@@ -83,3 +83,33 @@ entries:
     - title: Area Trigger
       url: /blox-area-trigger.html
       output: web, pdf
+
+  - title: Turn Based RPG
+    output: web, pdf
+    folderitems:
+    - title: Turn Based RPG
+      url: /tbrpg-intro.html
+      output: web, pdf
+    - title: TBRPG Global
+      url: /tbrpg-global.html
+      output: web, pdf
+    - title: Main Controller
+      url: /tbrpg-main.html
+      output: web, pdf
+    - title: Camera
+      url: /tbrpg-camera.html
+      output: web, pdf
+    - title: Player Setup
+      url: /tbrpg-player-setup.html
+      output: web, pdf
+    - title: Character Templates
+      url: /tbrpg-char-templates.html
+      output: web, pdf
+    - title: Character Prefabs
+      url: /tbrpg-charfabs.html
+      output: web, pdf
+    - title: Character Stats
+      url: /tbrpg-stats.html
+      output: web, pdf
+
+

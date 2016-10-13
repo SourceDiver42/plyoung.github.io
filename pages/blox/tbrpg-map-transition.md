@@ -1,5 +1,5 @@
 ---
-title: Turn Based RPG: Map Transition 
+title: Turn Based RPG Map Transition 
 keywords: unity3d, blox, visual scripting, programming
 sidebar: blox_sidebar
 toc: false
