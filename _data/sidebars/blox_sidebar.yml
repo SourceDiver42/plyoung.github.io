@@ -80,3 +80,6 @@ entries:
     - title: UI Updaters
       url: /blox-ui-updaters.html
       output: web, pdf
+    - title: Area Trigger
+      url: /blox-area-trigger.html
+      output: web, pdf

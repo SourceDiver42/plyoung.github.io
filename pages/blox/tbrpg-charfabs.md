@@ -1,5 +1,5 @@
 ---
-title: Blox Character Prefabs
+title: Turn Based RPG: Character Prefabs
 keywords: unity3d, blox, visual scripting, programming
 sidebar: blox_sidebar
 toc: false

@@ -1,14 +1,14 @@
 ---
-title: Turn Based RPG: Player Setup
+title: Turn Based RPG: Map Transition 
 keywords: unity3d, blox, visual scripting, programming
 sidebar: blox_sidebar
 toc: false
-permalink: tbrpg-player-setup.html
+permalink: tbrpg-map-entry.html
 folder: blox
 ---
 
-Player Setup
-============
+Map Transition
+==============
 
 Instructions on creating the default party and need for character templates and prefab setup.
 

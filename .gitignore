@@ -1,5 +1,10 @@
 _site/
+_pdf/
 .sass-cache/
 .jekyll-metadata
-_pdf
 .idea/
+.vscode/
+*.sh
+*.bat
+Gemfile
+Gemfile.lock

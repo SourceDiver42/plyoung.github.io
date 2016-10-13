@@ -1,5 +1,5 @@
 ---
-title: Blox TBRPG Camera
+title: Turn Based RPG: Camera
 keywords: unity3d, blox, visual scripting, programming
 sidebar: blox_sidebar
 toc: false
@@ -13,6 +13,8 @@ TBRPG Camera
 This controller provides a camera which acts similar to what you would expect in a turn based RPG games like Wasteland 2 or Divinity, Original Sin. It exposes various options so that you can configure how it acts uniquely to your game but the overall design if for a top-down type camera.
 
 The camera can be configured in the BGS Main Window; `Blox > Game Systems Window > TBRPG > Camera`. Please have a look at the [Unity documentation](https://docs.unity3d.com/Manual/class-Camera.html) for information related to the general camera settings found at the bottom of this editor.
+
+Note that a `TBRPG` object (menu: `GameObject > Turn Based RPG > Main Controller`) must be present in all game map/ level scenes since it will add the camera to the scene at runtime/ play-time. You should remove any camera that was automatically added to the scene when you create a new scene.
 
 TODO
 

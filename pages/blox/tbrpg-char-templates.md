@@ -1,5 +1,5 @@
 ---
-title: Blox Character Templates
+title: Turn Based RPG: Character Templates
 keywords: unity3d, blox, visual scripting, programming
 sidebar: blox_sidebar
 toc: false
