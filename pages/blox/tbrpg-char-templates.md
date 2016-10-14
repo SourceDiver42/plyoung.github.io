@@ -20,7 +20,9 @@ The template can be named anything you want. This name is only an identifier for
 
 If you select the newly added template you will note that a Prefab is required. The prefabs can be set up in the [Character Prefabs](tbrpg-charfabs.html) section.
 
-Below that is an area where you may define any number of properties to describe the character. This could be its visible Name, a texture for the portrait and a background story. All the Blox Variable types are supported so you can even link prefabs or other Unity objects here. These should not be values which changes during game play though. Character Stats and Attributes for example will be defined in a separate section.
+Below that is an area where you may define any number of properties to describe the character. This could be its visible name, a texture for the portrait or a background story to show to the player. All the Blox Variable types are supported so you can even link prefabs or other Unity objects here. These should not be values which changes during game play though. Character Stats and Attributes for example will be defined in a separate section.
+
+The meta properties added to one template will not be reflected on other. This allows you to create different properties for different templates or groups of templates. A template's property definitions can be copied and pasted to other templates to make setup of those templates' properties faster.
 
 Character Stats
 ---------------
