@@ -29,6 +29,8 @@ Make sure that `Auto-load Bootstrap` is *enabled* in the Blox Settings since TBR
 
 TBRPG adds various functions and properties which can be turned into Blocks. Open the Blox Settings, click on [Block Setup] and then enter "TBRPGEngine" into the list and click [Scan Namespaces]. After the scan you will be presented with a list of types which can be turned into Blocks. Mark "TBRPGEngine" and then click [Save] to have it added to the available Blocks.
 
+A lot of setup will take place in the Blox Game Systems editor window. This can be opened via menu: `Blox > Game Systems Window` and docked somewhere. The Turn Based RPG related settings will be under the TBRPG and other tabs of this window.
+
 TBRPG has a Global object which needs to be loaded as soon as possible since it contains references to game data and manages various parts of the game. The best place to put this is in your startup scene. I talk more about the startup sequence and the startup scene in this [video](https://www.youtube.com/watch?v=eFK7cvJQiiQ&list=PLuaBtUXEKcdLEhNpwuBnUQxfKYJHS6PcK&index=13).
 
 The startup scene topically holds objects which are set as DontDestroyOnLoad, meaning they will survive scene loads and will be present for the duration of the game session.

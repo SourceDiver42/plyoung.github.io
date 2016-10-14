@@ -7,8 +7,8 @@ permalink: tbrpg-camera.html
 folder: blox
 ---
 
-TBRPG Camera
-============
+Camera
+======
 
 This controller provides a camera which acts similar to what you would expect in a turn based RPG games like Wasteland 2 or Divinity, Original Sin. It exposes various options so that you can configure how it acts uniquely to your game but the overall design if for a top-down type camera.
 
