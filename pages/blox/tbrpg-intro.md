@@ -14,7 +14,7 @@ Turn Based RPG for Blox
 
 **WARNING: This plugin is still under heavy development. It is currently in Alpha state. Please visit the [Support Forum](http://forum.plyoung.com/t/turn-based-rpg-dev/3679) to track development and progress of this plugin.**
 
-The Turn Based RPG plugin for [Blox](https://www.assetstore.unity3d.com/?asac=MnslCi8JXB#!/content/62473) adds various game systems and controllers which are commonly needed while developing such a game. The goal of this plugin is to provide systems for game mechanics similar to games like Wasteland 2 or Divinity: Original Sin.
+The Turn Based RPG plugin for [Blox](https://www.assetstore.unity3d.com/?asac=MnslCi8JXB#!/content/62473) adds various game systems and controllers which are commonly needed while developing a Turn Based RPG game. The goal of this plugin is to provide systems for game mechanics similar to games like Wasteland 2 or Divinity: Original Sin.
 
 This is not a complete game or an API or Framework. It is a tool to develop a very genre specific game with.
 

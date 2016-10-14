@@ -24,6 +24,17 @@ Each entrance in the same scene should have a unique "Ident" since this ident is
 Exit
 ----
 
+![](img/tbrpg/10.png)
+
+The map exit is a component which you can add to any object which will cause a scene change when the player interacts with that object. This component can be added from menu: `Component > Blox > TBRPG > Map Exit`.
+
+You need to specify a scene to load and an ident for a map entrance in the target scene. You may leave out the entrance ident but then the first entrance found in the target scene will be used or position 0x0x0 if there are no map entrances defined in the target scene.
+
+The object you place this on will need a collider so that mouse clicks on the objects can be detected.
+
+Exit Trigger
+------------
+
 ![](img/tbrpg/07.png)
 
 The map exit is a trigger which will cause a scene change when a member of the party enters it. Make changes to the transform scale to determine how big an area the trigger should cover.
@@ -33,8 +44,5 @@ You need to specify a scene to load and an ident for a map entrance in the targe
 You will probably be placing all your player characters in the same layer. This layer can be selected for the "Player payer mask" option. Note that you may leave it to "Everything" if you want since the MapExit will not trigger for anything other than a player party member.
 
 You might also want to place this object in a layer, for example one called "Triggers" and then set up the project's layer collision matrix to exclude everything except the Player layer. You can read more about this in the Unity documentation for [Layer Collision Matrix](https://docs.unity3d.com/Manual/LayerBasedCollision.html).
-
-
-
 
 
