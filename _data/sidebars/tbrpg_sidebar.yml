@@ -30,24 +30,31 @@ entries:
     - title: TBRPG Global and Main
       url: /tbrpg-global.html
       output: web, pdf
-    - title: Camera
-      url: /tbrpg-camera.html
-      output: web, pdf
+
+    - title: Main Settings
+      url: /tbrpg-main-settings.html
+      output: web, pdf      
     - title: Player Setup
       url: /tbrpg-player-setup.html
+      output: web, pdf
+    - title: Camera
+      url: /tbrpg-camera.html
       output: web, pdf
     - title: Non-Player Character
       url: /tbrpg-npc.html
       output: web, pdf
+      
     - title: Character Templates
       url: /tbrpg-char-templates.html
       output: web, pdf
     - title: Character Prefabs
       url: /tbrpg-charfabs.html
       output: web, pdf
+
     - title: Character Stats
       url: /tbrpg-stats.html
       output: web, pdf
+
     - title: Map Transition
       url: /tbrpg-map-transition.html
       output: web, pdf

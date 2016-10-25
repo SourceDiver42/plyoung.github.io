@@ -25,6 +25,6 @@ The meta properties added to one template will not be reflected on other. This a
 Character Stats
 ---------------
 
-TODO
+TODO: How are stats associated and setup to contain unique values per character template.
 
 

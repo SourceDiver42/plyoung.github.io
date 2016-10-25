@@ -51,7 +51,7 @@ Have a look at the [Player Setup](tbrpg-player-setup.html) section to learn more
 Further reading
 ---------------
 
-TBRPG is a big system with many systems to handle various parts of the game. It also relies on systems from the Blox Game Systems. It can't all be covered in one page and you will have to read over the other sections of the [documentation](https://plyoung.github.io/blox.html) to learn more about the various systems and how they fit together to create your game.
+TBRPG is a big system with many systems to handle various parts of the game. It also relies on systems from the [Blox Game Systems](blox.html). It can't all be covered in one page and you will have to read over the other sections of the documentation to learn more about the various systems and how they fit together to create your game.
 
 TODO
 ----
