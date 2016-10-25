@@ -7,12 +7,18 @@ permalink: tbrpg-npc.html
 folder: tbrpg
 ---
 
-NPC Controller
-==============
-
-todo
-
+Non-Player Characters
+=====================
 
 
 Enemy
-=====
+-----
+
+This Component must be on any character which can start combat with the player party.
+
+todo: more info
+
+NPC
+---
+
+NPC Component info here ...
