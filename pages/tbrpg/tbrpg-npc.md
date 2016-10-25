@@ -16,6 +16,8 @@ Enemy
 
 This Component must be on any character which can start combat with the player party.
 
+
+
 todo: more info
 
 NPC
