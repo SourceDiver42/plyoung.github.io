@@ -1,27 +1,14 @@
 ---
-title: Blox Turn Based RPG
-keywords: unity3d, blox, visual scripting, programming
-sidebar: blox_sidebar
+title: Blox Turn Based RPG Setup
+keywords: unity3d, blox, visual scripting, programming, tactical, turn based rpg, tbrpg
+sidebar: tbrpg_sidebar
 toc: false
-permalink: tbrpg-intro.html
-folder: blox
+permalink: tbrpg-setup.html
+folder: tbrpg
 ---
 
-Turn Based RPG for Blox
-=======================
-
-[Asset Store](https://www.assetstore.unity3d.com/?asac=MnslCi8JXB#!/content/12859) | [Videos](https://www.youtube.com/playlist?list=PLuaBtUXEKcdLEhNpwuBnUQxfKYJHS6PcK) | [Support](http://forum.plyoung.com/c/blox-3) | [FAQ](http://forum.plyoung.com/t/turn-based-rpg-dev/3679)
-
-**WARNING: This plugin is still under heavy development. It is currently in Alpha state. Please visit the [Support Forum](http://forum.plyoung.com/t/turn-based-rpg-dev/3679) to track development and progress of this plugin.**
-
-The Turn Based RPG plugin for [Blox](https://www.assetstore.unity3d.com/?asac=MnslCi8JXB#!/content/62473) adds various game systems and controllers which are commonly needed while developing a Turn Based RPG game. The goal of this plugin is to provide systems for game mechanics similar to games like Wasteland 2 or Divinity: Original Sin.
-
-This is not a complete game or an API or Framework. It is a tool to develop a very genre specific game with.
-
-Please visit the [FAQ page](http://forum.plyoung.com/t/turn-based-rpg-dev/3679) to learn about what features are available.
-
 Setup
------
+=====
 
 The Blox package should be installed before installing the TBRPG package. This documentation will assume you are familiar with using Blox and the Blox Game Systems. Please refer to the Blox [documentation](https://plyoung.github.io/blox.html) and [videos](https://www.youtube.com/playlist?list=PLuaBtUXEKcdLEhNpwuBnUQxfKYJHS6PcK) to learn more about Blox.
 

@@ -1,10 +1,10 @@
 ---
 title: Turn Based RPG Character Stats
-keywords: unity3d, blox, visual scripting, programming
-sidebar: blox_sidebar
+keywords: unity3d, blox, visual scripting, programming, tactical, turn based rpg, tbrpg
+sidebar: tbrpg_sidebar
 toc: false
 permalink: tbrpg-stats.html
-folder: blox
+folder: tbrpg
 ---
 
 Character Stats

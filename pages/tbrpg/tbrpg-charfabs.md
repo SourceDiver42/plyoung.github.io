@@ -1,16 +1,16 @@
 ---
 title: Turn Based RPG Character Prefabs
-keywords: unity3d, blox, visual scripting, programming
-sidebar: blox_sidebar
+keywords: unity3d, blox, visual scripting, programming, tactical, turn based rpg, tbrpg
+sidebar: tbrpg_sidebar
 toc: false
 permalink: tbrpg-charfabs.html
-folder: blox
+folder: tbrpg
 ---
 
 Character Prefabs
 =================
 
-This section is to define character prefabs. These prefabs can then be selected and used when setting up Character Templates.
+This section is used to define character prefabs. These prefabs will then be avialable in systems which need acces to character rpefabs.
 
 ![](img/tbrpg/05.png)
 
