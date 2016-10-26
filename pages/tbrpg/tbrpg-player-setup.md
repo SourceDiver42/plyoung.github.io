@@ -49,10 +49,6 @@ Detection
 - Detection Range: Range at which Enemy NPC can detect a party member and initialise combat.
 - Detection Check: Interval at which detection checks are done (seconds).
 
-Combat
-
-- Move Info Prefab: Prefab of a UI object which has the [MovementInfoUpdater Component](tbrpg-components.html#movement-info-updater) on it.
-
 Sample Character Setup
 ----------------------
 

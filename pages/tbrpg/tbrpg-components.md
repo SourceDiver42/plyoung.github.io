@@ -15,11 +15,13 @@ HUD Manager
 
 `Component > Blox > GUI > HUD Manager`
 
-The HUD Manager should be on the main controller of the GUI Hud scene. Do not use this in any other scenes but the one considered to be the Hud Scene. See TBRPG Settings area for more info on [the Hud Scene](tbrpg-settings.html). A sample Hud scene can be found at `Assets/plyoung/TBRPG/GUI/UI_HUD.unity`.
+The HUD Manager should be on the main object of the GUI HUD scene. Do not use this in any other scenes but the one considered to be the HUD Scene. See TBRPG Settings area for more info on [the HUD Scene's](tbrpg-settings.html) use. A sample HUD scene can be found at `Assets/plyoung/TBRPG/GUI/UI_HUD.unity`.
 
-The Hud has 3 canvases. Their Sort Orders differ so that Canvas 1 will draw over 0, and 2 over 1. UI elements are placed in the different canvases as needed. The canvas objects should be child objects of the Hud manager object.
+The HUD has 3 canvases. Their Sort Orders differ so that Canvas 1 will draw over 0, and 2 over 1. UI elements are placed in the different canvases as needed. The canvas objects should be child objects of the HUD manager object.
 
-[TBRPGMain](tbrpg-global.html#tbrpgmain) will ask the Hud Manager to show the canvases when a game scene was loaded and hide it again when TBRPGMain is destroyed. 
+[TBRPGMain](tbrpg-global.html#tbrpgmain) will ask the HUD Manager (and load the HUD scene if needed) to show the canvases when a game scene was loaded and hide it again when TBRPGMain is destroyed. A game scene is a scene which the player party can explore and where combat takes place.
+
+The HUD scene must be in the list of available scenes as set in [BGS Scenes area](blox-scenes.html) but should not be marked to auto-load somce TBRPGMain will take care of that.
 
 Movement Info Updater
 ---------------------
