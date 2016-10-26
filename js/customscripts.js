@@ -1,30 +1,34 @@
-
 $('#mysidebar').height($(".nav").height());
 
-
-$( document ).ready(function() {
-
-    //this script says, if the height of the viewport is greater than 800px, then insert affix class, which makes the nav bar float in a fixed
-    // position as your scroll. if you have a lot of nav items, this height may not work for you.
+$(document).ready(function() {
     var h = $(window).height();
-    //console.log (h);
-    if (h > 800) {
-        $( "#mysidebar" ).attr("class", "nav affix");
-    }
-    // activate tooltips. although this is a bootstrap js function, it must be activated this way in your theme.
-    $('[data-toggle="tooltip"]').tooltip({
-        placement : 'top'
-    });
+    if (h > 800) {$( "#mysidebar" ).attr("class", "nav affix");}
+    $('[data-toggle="tooltip"]').tooltip({placement : 'top'});
 
-    /**
-     * AnchorJS
-     */
     anchors.add('h2,h3,h4,h5');
 
+    $("#contact-form").submit(function()
+    {
+        var email = $("#email").val();
+        var name = $("#name").val();
+        var msg = $("#msg").val();
+        var subj = "PLYoung Contact Form";
+
+         $.ajax(
+         {
+             url: atob('aHR0cHM6Ly9mb3Jtc3ByZWUuaW8vcGx5b3VuZ0BnbWFpbC5jb20='),
+             method: "POST",
+             data: {message: "msg",},
+             data: {name:name, _replyto:email, _subject:subj, message:msg},
+             dataType: "json"
+         }); 
+
+        $("#contact-form").hide();
+        $("#result").show();
+        return false;
+    });
 });
 
-// needed for nav tabs on pages. See Formatting > Nav tabs for more details.
-// script from http://stackoverflow.com/questions/10523433/how-do-i-keep-the-current-tab-active-with-twitter-bootstrap-after-a-page-reload
 $(function() {
     var json, tabsState;
     $('a[data-toggle="pill"], a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
