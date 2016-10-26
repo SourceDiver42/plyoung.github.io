@@ -27,9 +27,6 @@ entries:
     - title: Setup
       url: /tbrpg-setup.html
       output: web, pdf
-    - title: TBRPG Global and Main
-      url: /tbrpg-global.html
-      output: web, pdf
 
     - title: Main Settings
       url: /tbrpg-main-settings.html

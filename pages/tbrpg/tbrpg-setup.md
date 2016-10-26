@@ -22,7 +22,7 @@ TBRPG has a Global object which needs to be loaded as soon as possible since it 
 
 The startup scene topically holds objects which are set as DontDestroyOnLoad, meaning they will survive scene loads and will be present for the duration of the game session.
 
-Only add the TBRPG Global to this one scene since it should not be loaded more than once per game session. It can be added via the menu: `Blox > Turn Based RPG > Global Controller`.
+Only add the [TBRPG Global](tbrpg-components.html#tbrpg-global) to this one scene since it should not be loaded more than once per game session. It can be added via the menu: `Blox > Turn Based RPG > Global Controller`.
 
 A typical startup scene might look something like this after the TBRPG Global and other common objects are added.
 
@@ -35,7 +35,7 @@ This scene should be set to auto-load in the Blox Scenes Setup. This is done by 
 Game Maps/ Levels
 -----------------
 
-Each game map or level, the scenes which your player party will explore, must contain a TBRPGMain Controller. This can be added via menu: `Blox > Turn Based RPG > Main Controller`. Note, this is the Main Controller and not the Global, which should be added to only one scene.
+Each game map or level, the scenes which your player party will explore, must contain a [TBRPGMain](tbrpg-components.html#tbrpgmain) Controller. This can be added via menu: `Blox > Turn Based RPG > Main Controller`. Note, this is the Main Controller and not the Global, which should be added to only one scene.
 
 The Main Controller will make sure that the party is spawned in the correct spot in the scene and setup and manage various other things which are specific to the scene.
 
