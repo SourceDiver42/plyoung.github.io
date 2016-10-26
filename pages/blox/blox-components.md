@@ -15,9 +15,13 @@ You can find these components under menu: `Component > Blox > Helpers`
 
 ## Disable on Awake
 
+`Component > Blox > Helpers > Disable on Awake`
+
 The GameObject that this component is on will be disabled as soon as the GameObject is added to the scene and then this component will remove itself from the GameObject.
 
 ## Don't Destroy On Load
+
+`Component > Blox > Helpers > Don't Destroy On Load`
 
 This component will mark the GameObject as `DontDestroyOnLoad` and then remove itself from the GameObject.
 
@@ -25,8 +29,12 @@ When loading a new level (non-additively) all objects in the scene are destroyed
 
 ## Simple Follower
 
+`Component > Blox > Helpers > Simple Follower`
+
 Follows the target object.
 
 ## Sound Volume Updater
+
+`Component > Blox > Helpers > Sound Volume Updater`
 
 Add this component to any GameObject that has an AudioSource component on it to have it take care of the volume adjustment of that AudioSource.

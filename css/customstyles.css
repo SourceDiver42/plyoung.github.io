@@ -6,6 +6,7 @@ body {
     text-rendering: optimizeLegibility;    
 }
 
+small {font-size:80%;line-height:1}
 .ply-button {font-size:16px;padding:6px 12px}
 
 .bs-callout {
