@@ -19,7 +19,7 @@ folder: unirpg
 UniRPG
 ======
 
-[Asset Store](https://www.assetstore.unity3d.com/?asac=MnslCi8JXB#!/content/51078) | [Support](http://forum.plyoung.com/c/unirpg)
+[Asset Store](https://www.assetstore.unity3d.com/#!/content/51078?aid=1101lGtB) | [Support](http://forum.plyoung.com/c/unirpg)
 
 
 UniRPG is a tool that will help you create hack&slash type RPG games in Unity. The goal is to provide a tool with which to create a specific genre of game in Unity 3D without doing any code scripting. Full source is provided and the system supports plug-ins when you need to do more or expand on the existing features.

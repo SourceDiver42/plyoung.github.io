@@ -28,7 +28,7 @@ Have a look at [Battlemass 2][2], a game that were build with a basic version of
 
 ![](img/mapnav/mapnav2.jpg)
 
-  [1]: https://www.assetstore.unity3d.com/en/#!/content/27837?asac=MnslCi8JXB
+  [1]: https://www.assetstore.unity3d.com/en/#!/content/27837?aid=1101lGtB
   [2]: http://www.desura.com/games/battlemass-2
   [3]: http://www.googledrive.com/host/0BwK5YwVy6AHlSmMzcm1mZHVWSnM
   [4]: https://drive.google.com/open?id=0BwK5YwVy6AHlaXVjSld2REgyUlU

@@ -10,7 +10,7 @@ folder: plygame
 plyGame
 =======
 
-[Asset Store](https://www.assetstore.unity3d.com/?asac=MnslCi8JXB#!/content/9694) | [Videos](https://www.youtube.com/playlist?list=PLuaBtUXEKcdJCbNoDg0tJ9TUdkNRDrKlI) | [Support](http://forum.plyoung.com/c/plygame-blox)
+[Asset Store](https://www.assetstore.unity3d.com/#!/content/9694?aid=1101lGtB) | [Videos](https://www.youtube.com/playlist?list=PLuaBtUXEKcdJCbNoDg0tJ9TUdkNRDrKlI) | [Support](http://forum.plyoung.com/c/plygame-blox)
 
 plyGame is a visual game development tool for the Unity game engine. It allows developers to create games and prototypes without having to do any programming while still allowing for scripts where you want to interact with the system's API.
 

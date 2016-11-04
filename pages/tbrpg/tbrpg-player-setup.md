@@ -52,7 +52,7 @@ Detection
 Sample Character Setup
 ----------------------
 
-In this example I used the [MCS Female character](https://www.assetstore.unity3d.com/?asac=MnslCi8JXB#!/publisher/13832).
+In this example I used the [MCS Female character](https://www.assetstore.unity3d.com/#!/publisher/13832).
 
 All you really need to add to a character object is the [Animator](https://docs.unity3d.com/Manual/AnimatorControllers.html) component and add a controller in the Controller property of the Animator.
 

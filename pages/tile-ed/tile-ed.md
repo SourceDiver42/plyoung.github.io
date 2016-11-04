@@ -10,7 +10,7 @@ folder: tile-ed
 TileEd
 ======
 
-[Asset Store](https://www.assetstore.unity3d.com/?asac=MnslCi8JXB#!/content/49094) | [Videos](https://www.youtube.com/playlist?list=PLuaBtUXEKcdIIqdtwkVbnnHyoP8ZXOhzx) | [Support](http://forum.plyoung.com/c/tile-ed) 
+[Asset Store](https://www.assetstore.unity3d.com/#!/content/49094?aid=1101lGtB) | [Videos](https://www.youtube.com/playlist?list=PLuaBtUXEKcdIIqdtwkVbnnHyoP8ZXOhzx) | [Support](http://forum.plyoung.com/c/tile-ed) 
 
 TileEd is a 3D tile map editor/ placement tool. It helps speed up painting of game worlds when working with tiles or modular pieces that needs to align to a grid.
 
