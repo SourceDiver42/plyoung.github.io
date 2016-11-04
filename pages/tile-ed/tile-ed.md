@@ -25,5 +25,4 @@ TileEd is a 3D tile map editor/ placement tool. It helps speed up painting of ga
 Tile and Modular art
 --------------------
 
-<iframe src="https://api.assetstore.unity3d.com/affiliate/embed/list/10402-tiled-and-modular-art/widget-medium/MnslCi8JXB" style="width:280px; height:385px; border:0px;"></iframe>
-
+<iframe src="https://api.assetstore.unity3d.com/affiliate/embed/list/10402-tiled-and-modular-art/widget-medium?aid=1101lGtB" style="width:300px; height:485px; border:0px;"></iframe>

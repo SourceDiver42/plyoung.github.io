@@ -37,10 +37,14 @@ entries:
     - title: Camera
       url: /tbrpg-camera.html
       output: web, pdf
-    - title: Non-Player Character
-      url: /tbrpg-npc.html
+
+    - title: Character
+      url: /tbrpg-character.html
       output: web, pdf
-      
+    - title: Combat
+      url: /tbrpg-combat.html
+      output: web, pdf
+
     - title: Character Templates
       url: /tbrpg-char-templates.html
       output: web, pdf
