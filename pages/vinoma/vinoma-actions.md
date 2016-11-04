@@ -264,7 +264,7 @@ This group contains various other actions.
 
 ### Blox Event ###
 
-(Only available if you installed the [Blox Visual Scripting](https://www.assetstore.unity3d.com/#!/content/12859) system and imported the package: `\Assets\plyoung\vinoma\Packages\vinoma_blox.unitypackage`)
+(Only available if you installed the [Blox Visual Scripting](https://www.assetstore.unity3d.com/#!/content/12859?aid=1101lGtB) system and imported the package: `\Assets\plyoung\vinoma\Packages\vinoma_blox.unitypackage`)
 
 This action allows you to Trigger a Blox Event in the target GameObject. THe Target must have a Blox component on it and be in a State that has the Event that should be executed. If you leave **Target** to none then it will be assumed that the `VinomaGameGlobal` object is the target.
 
