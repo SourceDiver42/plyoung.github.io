@@ -30,6 +30,7 @@ If you choose a non-static property then a context object for that property must
 - With Tag: Find the first GameObject with the given Tag. This object must have the component on it which the property is defined in.
 - Of Type: This will find the first GameObject which has the component on it which the property is defined in.
 - Instance: This will present you with a list of all static members which returns a reference to the type which declares the property. This is useful for working with singleton types.
+- Owner: Is useful for binds done directly on a GameObject, for example when you are setting up a [Button Action](blox-ui-updaters) component. This refers to the object on which the data binding was done.
 
 ### Data Provider
 
@@ -43,15 +44,31 @@ These are the providers defined in Blox and Blox Game Systems. There might be ot
 
 ### Common/Blox Variable
 
-`Result: Depends on Varaible Type`
+`Result: Depends on Variable Type`
 
-Return the value of a Global, Object, or [Blox Variable](blox-variables.html).
+Return the value of a Global, Object, or [Blox Variable](blox-variables).
+
+For the Blox and Object variable types you need to specify from which objects these variables will be retrieved. You can choose to find the object by its name or tag, or to use "owner" which is the object on which the data bind was created. "Owner" is useful for binds done directly on a GameObject, for example when you are setting up a [Button Action](blox-ui-updaters) component.
+
+Blox variables also require that you select which Blox the variable was defined in.
 
 ### Common/Comparison Check
 
 `Result: Boolean (True or False)`
 
 A condition where some properties and values are compared. You can click on the 1st or 3rd button to bring up another Data Binding window. This allows you to select what to bind to and watch for changes. Note that the middle button `==` can be changed when you click on it.
+
+The `And` and `Or` options should only be used with values which result in a Boolean value. Here you are testing for the following kind of results:
+
+- True and True = True
+- False and False = False
+- True and False = False
+- False and True = False
+
+- True or True = True
+- False or False = False
+- True or False = True
+- False or True = True
 
 ### Common/Managed Property
 
@@ -63,7 +80,7 @@ Return the value of a [managed property](blox-property-manager.html).
 
 `Result: Float`
 
-Does a mathematical operation on two values. The first one should be a float to prevent rounding problems. You can click on the 1st or 3rd button to bring up another Data Binding window. This allows you to select what to bind to and watch for changes. The opeation to perform on the values can be selected with the middle button.
+Does a mathematical operation on two values. The first one should be a Float to prevent rounding problems. You can click on the 1st or 3rd button to bring up another Data Binding window. This allows you to select what to bind to and watch for changes. The opeation to perform on the values can be selected with the middle button.
 
 
 

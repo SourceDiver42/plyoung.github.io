@@ -56,3 +56,108 @@ Finally there is the `Global Variables`. These are defined in one place and ther
 
 ![](img/blox/08.png)
 
+Variables API
+-------------
+
+The Variables can also be accessed from script and all follow a similar way to read or set the value of a variable.
+
+### plyVar
+
+This is a single variable and exposes a few functions to work with a variable. You will normally use the short-cuts defined in other classes and not work with this directly.
+
+- `System.Type variableType`: This property returns the Type of the value hold by the variable.
+- `object GetValue()`: Returns the value of a variable.
+- `void SetValue(object v)`: Set the value of a variable.
+
+```
+plyVar v = GlobalVariables.Instance.FindVariable("mystringvar");
+v.SetValue("Hello");
+```
+
+### plyVariables
+
+Variables are grouped into a container called `plyVariables`. It has the functions needed to access and find the variables by name.
+
+- `plyVar FindVariable(string name)`: Returns reference to a plyVar.
+- `bool SetVarValue(string name, object value)`: Set the value of a variable.
+- `object GetVarValue(string name)`: Get the value of a variable.
+
+```
+plyVariables vars = GlobalVariables.Instance.variables;
+vars.SetValue("mystringvar", Hello");
+```
+
+### Global Variables
+
+To access these you simply go through the `GlobalVariables.Instance.variables` which will give you a reference to the `plyVariables` type object. The Global Variables exist on a GameObject at runtime which has the `GlobalVariables` component, derived from `plyVariablesBehaviour`, on it.
+
+There are also a few short-cuts so that you do not have to work through the `variables` field.
+
+- `plyVar FindVariable(string name)`: Returns reference to a plyVar.
+- `SetVarValue(string name, object value)`: Set the value of a variable.
+- `GetVarValue(string name)`: Get the value of a variable.
+- `GameObject GetGameObjectVarValue(string name)`: Get the value of a variable as a GameObject. This can be used even if the variable is storing a reference to a Component.
+- `T GetComponentVarValue<T>(string name)`: Get the value of a variable as a Component of type T. This can be used even if the variable is storing a reference to a GameObject or different Component of the same GameObject.
+
+```
+GlobalVariables.Instance.SetVarValue("mystringvar", Hello");
+```
+
+### Object Variables
+
+If a GameOject has the Object Variables component on it you can access and manipulate these variables. The `ObjectVariables` component is also derived from `plyVariablesBehaviour` just like `GlobalVariables` and therefore has the same functions.
+
+- `plyVar FindVariable(string name)`: Returns reference to a plyVar.
+- `SetVarValue(string name, object value)`: Set the value of a variable.
+- `GetVarValue(string name)`: Get the value of a variable.
+- `GameObject GetGameObjectVarValue(string name)`: Get the value of a variable as a GameObject. This can be used even if the variable is storing a reference to a Component.
+- `T GetComponentVarValue<T>(string name)`: Get the value of a variable as a Component of type T. This can be used even if the variable is storing a reference to a GameObject or different Component of the same GameObject.
+
+```
+GameObject go = Find("player");
+ObjectVariables vars = go.GetComponent<ObjectVariables>();
+float currHp = vars.GetVarValue("hp");
+float newHp = currHp - 10;
+vars.SetVarValue("hp", newHp);
+```
+
+### Blox Variables
+
+Blox Variables are accessed through the `BloxContainer` component. You will need to know the `ident` of the Blox in which the variable was created. It is more likely that you will only know the name of the Blox. The find the `ident` simply use `BloxGlobal.Instance.FindBloxIdentByName("blox_name")`
+
+- `plyVar FindVariable(string bloxIdent, string varName)`: Return reference to a variable.
+- `BloxVariables GetBloxVariables(string bloxIdent)`: Returns the container for variables of a Blox.
+
+The `BloxVariables` is derived from `plyVariables` and has the same functions for working with variables.
+
+- `plyVar FindVariable(string name)`: Returns reference to a plyVar.
+- `bool SetVarValue(string name, object value)`: Set the value of a variable.
+- `object GetVarValue(string name)`: Get the value of a variable.
+
+```
+// Get a reference to the Blox Container on a Player object called "player"
+GameObject go = Find("player");
+BloxContainer container = go.GetComponent<BloxContainer>();
+
+// Now find the ident for a Blox named "player logic"
+string ident = BloxGlobal.Instance.FindBloxIdentByName("player logic");
+
+// stop now since the ident is invalid (name might be incorrect)
+if (ident == null) return;
+
+// Get the variables of the Blox
+BloxVariables vars = container.GetBloxVariables(ident);
+
+// stop now since the variables could not be found. guess the blox is not in this container
+if (vars == null) return;
+
+// Now I can set the value of a variable
+float currHp = vars.GetVarValue("hp");
+float newHp = currHp - 10;
+vars.SetVarValue("hp", newHp);
+
+```
+
+### Event Variables
+
+Event Variables should not be accessed from script since these variables are only valid inside a Blox Event that created them.

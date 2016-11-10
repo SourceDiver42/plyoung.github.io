@@ -12,23 +12,6 @@ Player Setup
 
 Player and party setup.The player and party settings can be found in Blox Game Systems Window under `TBRPG > Player`.
 
-Navigation
-----------
-
-TBRPG makes use of the [Unity Navigation system](https://docs.unity3d.com/Manual/Navigation.html). Please familiarise yourself with this system and be sure to create at least a NavMesh before testing a scene else there will be errors related to character movement.
-
-Animation
----------
-
-TBRPG makes use of [Unity Animation System](https://docs.unity3d.com/Manual/AnimationSection.html) (also referred to as mecanim).
-
-The following parameters should be defined in the animator of a character, even if the animator will not make use of the parameters:
-
-- speed: (float) This will be updated with the NavMeshAgent's velocity magnitude and is how you can tell how fast the character is moving. This can be used to determine when a character should play its movement animation. A simple transition can be from idle to walk when the `speed` is greater than 0.1 and then back to idle from walk when it is less than 0.1
-- combat: (bool) Is True while the player party is in combat. Could be used to play combat stance animations.
-
-	![](img/tbrpg/08.png)
-
 Default Party
 -------------
 
@@ -42,6 +25,10 @@ Movement
 - Click Move Mask: Which layers the player can click on when trying to move the party or a character.
 - Click Ray Length: How far the ray should be cast when checking what the player clicked on. Increase this if your camera can zoom out further.
 - Party Position Check: Interval at which party members check their positions relative to the leader (seconds).
+- Sneak Speed: Movement Speed to use when character is sneaking.
+- Walk Speed: Movement Speed to use when character is walking.
+- Run Speed: Movement Speed to use when character is running.
+- Run When Distance: The character will choose the Run Speed when this far from destination. Except when sneaking. Set to 0 to disabled this option.
 
 Detection
 

@@ -33,3 +33,8 @@ The rest of the options will depend on what kind of UI Updater you are using.
 - Text: Bind to the text property of the Text component. The updater will update either the Text component's value or the bound value depending on which changes.
 - Toggle: Bind to the "is on" property of the Toggle component. The updater will update either the Toggle's value or the bound value depending on which changes.
 
+Button Action
+-------------
+
+The Button Action gives you a way to trigger a bind of a Property or DataProvider when a UI Button's Click event is triggered. The most common use would be to bind to a Property (which can be either property, field or method members of a type). It also allows you to send values to the bound method or set the value on a bound property or field.
+
