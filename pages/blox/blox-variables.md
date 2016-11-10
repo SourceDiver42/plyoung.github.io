@@ -123,7 +123,7 @@ vars.SetVarValue("hp", newHp);
 
 ### Blox Variables
 
-Blox Variables are accessed through the `BloxContainer` component. You will need to know the `ident` of the Blox in which the variable was created. It is more likely that you will only know the name of the Blox. The find the `ident` simply use `BloxGlobal.Instance.FindBloxIdentByName("blox_name")`
+Blox Variables are accessed through the `BloxContainer` component. You will need to know the `ident` of the Blox in which the variable was created. It is more likely that you will only know the name of the Blox. To find the `ident` simply use `BloxGlobal.Instance.FindBloxIdentByName("blox_name")`
 
 - `plyVar FindVariable(string bloxIdent, string varName)`: Return reference to a variable.
 - `BloxVariables GetBloxVariables(string bloxIdent)`: Returns the container for variables of a Blox.
