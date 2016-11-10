@@ -58,6 +58,8 @@ You can access the global variables editor through menu: `Blox > Global Variable
 
 ![](img/blox/08.png)
 
+------------------------------------------------
+
 Variables API
 -------------
 
