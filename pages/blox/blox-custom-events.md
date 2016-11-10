@@ -18,7 +18,7 @@ To create new Events you simply need to create a new Blox Event Handler and defi
 
 The Event Handler is simply a MonoBehaviour which will be attached to the GameObject at runtime. Keep in mind that if the developer uses the script-gen feature then the Event Handler component might not be attached but rather the generated script; so do not use the Event Handler for your system's logic; only use it to define the Blox events.
 
-It is **important** that you choose unique function names for your events. At the very least do not use anything defined for the Unity events like Update() or Awake().
+It is important that you choose unique function names for your events. At the very least do not use anything defined for the Unity events like Update() or Awake().
 
 Here is what an Event Handler might look like. This is a runtime script.
 
@@ -102,7 +102,7 @@ namespace MyNamespace
 }
 ```
 
-**BloxEventAttribute**
+BloxEventAttribute
 
 This must be added to any function which must be seen as a Blox Event. By default you only have to specify the `ident` which also acts as a path to grouping the Event in the Events selection window.
 
@@ -110,10 +110,10 @@ To use any of the non-default ones you simply add them as named parameters; for 
 
 `[BloxEvent("MyEvents/Event 2", Order=5, YieldAllowed=true)]`
 
-- string **Ident**: this is the identifier for the event. It must be in the form of `Path/To/Event Name`.
-- int **Order**: can be used to change the order of the Event in the list of events. Default = 99999 to sort it to the bottom.
-- string **IconName**: this can be used to specify a special different icon to represent this event. By default a unity logo icon is used. You will note that the Custom event uses a custom Blox logo icon. See below for more info on how to register this icon with Blox.
-- bool **YieldAllowed**: (default = false) set this to true for Events that allow yielding. If this is false then no Wait-type block will be allowed in the event. 
+- `string Ident`: this is the identifier for the event. It must be in the form of `Path/To/Event Name`.
+- `int Order`: can be used to change the order of the Event in the list of events. Default = 99999 to sort it to the bottom.
+- `string IconName`: this can be used to specify a special different icon to represent this event. By default a unity logo icon is used. You will note that the Custom event uses a custom Blox logo icon. See below for more info on how to register this icon with Blox.
+- `bool YieldAllowed`: (default = false) set this to true for Events that allow yielding. If this is false then no Wait-type block will be allowed in the event. 
 
 If you specified a custom icon name then you need to register the icon's texture with Blox as soon as Unity is done compiling scripts or at least before the user will see the Event in the Blox editor. That means the best time would be during `[InitializeOnLoad]`.
 

@@ -10,16 +10,16 @@ folder: blox
 Custom Blocks
 =============
 
-There are two way in which Blocks are created in Blox. The 1st and easiest is to let Blox automatically create them from fields, properties, and methods. This is how it works for almost all the Blocks in the Blox system, like those found under the UnityEngine category.
+There are two ways in which Blocks are created in Blox. The 1st and easiest is to let Blox automatically create them from fields, properties, and methods. This is how it works for almost all the Blocks in the Blox system, like those found under the UnityEngine category.
 
-However, sometimes it is not easy to describe a Block in one function and that is where you might want to create a Custom Block. In Blox all the Blocks under the Common, Flow, Maths, Comparison, and some in Values category are custom Blocks.
+However, sometimes it is not easy to describe a Block in one function and that is where you might want to create a Custom Block. In Blox all the Blocks under the Common, Flow, Maths, Comparison, and some in the Values category are custom Blocks.
 
 Defining the Block
 ------------------
 
 There are 3 parts to a Block. The runtime part which does the actual work, the Block drawer and the Block script-gen.
 
-All custom Blocks must derive from `BloxBlock` and have the `BloxBloxAttribute` to describe that Block to Blox.
+All custom Blocks must derive from `BloxBlock` and have the `BloxBlockAttribute` to describe that Block to Blox.
 
 The basic framework of a Block looks like this.
 
@@ -70,21 +70,21 @@ namespace MyNamespace
 
 The BloxBlock attribute requires two parameters be set; the first is the `ident` which looks like a path and determines how the Block will be sorted into the list of Blocks. The second is the `BlockType` which describes what kind of Block this is.
 
-- string **Ident**: Name in form of a path /Group/Group/Name. This must be unique among all Blocks.
-- BloxBlockType **BlockType**: Type of the Block. 
-    + **Value**: A value like Int, String, or Vector3 (or a constructor, or comparison operator). You use this for a Block which can never be used like an Action. The Comparison Blocks for example uses this rather than Action.
-    + **Container**: An Action Block which can have child Blocks. The IF and Loop Blocks are container blocks.
-    + **Action**: Action Blocks and Blocks that can set/ return values (functions, getters and setters) - these can be used as either an action or as field in Context/ Parameters of other Blocks. Note, these can not be used as fields when they specify no *ReturnType*.
-- int **Order**: Change order in blocks list.
-- System.Type **ReturnType**: Return type of this block if it returns a value. This must be set when the Block is *Value* type and is optional of the Block is *Action* type. No point in setting this for *Container* bocks.
-- string **IconName**: Icon to use. An editor script needs to register this icon with BloxEdGUI.namedIcons before Blocks are loaded (so [InitializeOnLoad] is probably the best place). See below for more info.
-- string **Style**: Custom style name. There is no way to add new styles at this time. There are only alternate styles for Action Blocks available. Do not try change it for Value and Container Blocks. The available styles are: default, grey, red, orange, debug
-- System.Type **ContextType**: If set then this Block requires a context block and that block should return a value be of this type.
-- System.Type[] **ParamTypes**: Parameters that this Block takes, null if not used. Array must be exactly same length as ParamNames.
-- string[] **ParamNames**: Names of the parameters. Array must be set and must be exactly same length as ParamTypes if ParamTypes is used. Name starting with "!" will not be shown in the block.
-- string[] **ParamEmptyVal**: If used then it must be same length as ParamTypes and specify empty values to show for the parameters (or null if default value should be shown)
-- int **OverrideRenderFields**: 0:no, 1:only-action, 2:only-when-field, 3:both, 4:suppress rendering head.
-- bool **IsYieldBlock**: Should be set true by Wait blocks (those which can cause a yield) so that editor can prevent dropping them in events that does not support yielding
+- `string Ident`: Name in form of a path /Group/Group/Name. This must be unique among all Blocks.
+- `BloxBlockType BlockType`: Type of the Block. 
+    + Value: A value like Int, String, or Vector3 (or a constructor, or comparison operator). You use this for a Block which can never be used like an Action. The Comparison Blocks for example uses this rather than Action.
+    + Container: An Action Block which can have child Blocks. The IF and Loop Blocks are container blocks.
+    + Action: Action Blocks and Blocks that can set/ return values (functions, getters and setters) - these can be used as either an action or as field in Context/ Parameters of other Blocks. Note, these can not be used as fields when they specify no *ReturnType*.
+- `int Order`: Change order in blocks list.
+- `System.Type ReturnType`: Return type of this block if it returns a value. This must be set when the Block is *Value* type and is optional of the Block is *Action* type. No point in setting this for *Container* bocks.
+- `string IconName`: Icon to use. An editor script needs to register this icon with BloxEdGUI.namedIcons before Blocks are loaded (so [InitializeOnLoad] is probably the best place). See below for more info.
+- `string Style`: Custom style name. There is no way to add new styles at this time. There are only alternate styles for Action Blocks available. Do not try change it for Value and Container Blocks. The available styles are: default, grey, red, orange, debug
+- `System.Type ContextType`: If set then this Block requires a context block and that block should return a value be of this type.
+- `System.Type[] ParamTypes`: Parameters that this Block takes, null if not used. Array must be exactly same length as ParamNames.
+- `string[] ParamNames`: Names of the parameters. Array must be set and must be exactly same length as ParamTypes if ParamTypes is used. Name starting with "!" will not be shown in the block.
+- `string[] ParamEmptyVal`: If used then it must be same length as ParamTypes and specify empty values to show for the parameters (or null if default value should be shown)
+- `int OverrideRenderFields`: 0:no, 1:only-action, 2:only-when-field, 3:both, 4:suppress rendering head.
+- `bool IsYieldBlock`: Should be set true by Wait blocks (those which can cause a yield) so that editor can prevent dropping them in events that does not support yielding
 
 **Examples**
 
@@ -242,18 +242,18 @@ Only needed when you defined properties (public fields) and want to be able to t
 
 These are the properties and methods available in the BloxBlock base class. I will only list those you should use. The rest are for advanced or internal use.
 
-- BloxBlock **next**: The block following after this one
-- BloxBlock **firstChild**: The first child of this Block if this Block is a container block (like the IF and Loop Blocks)
-- BloxBlock **contextBlock**: This is the context Block if this Block requires a context (the 1st field shown at the front of the Block)
-- BloxBlock[] **paramBlocks**: These are the Blocks used as fields (parameters) of this Block
-- bool **isValid**: This will be set false when LogError() is called and the RunBlock() will no be executed again
+- `BloxBlock next`: The block following after this one
+- `BloxBlock firstChild`: The first child of this Block if this Block is a container block (like the IF and Loop Blocks)
+- `BloxBlock contextBlock`: This is the context Block if this Block requires a context (the 1st field shown at the front of the Block)
+- `BloxBlock[] paramBlocks`: These are the Blocks used as fields (parameters) of this Block
+- `bool isValid`: This will be set false when LogError() is called and the RunBlock() will no be executed again
 
 Functions
 
-- object **Run()**: You will call this on a context or param Block to get some value from it. See RunBlock() section above where I describe it in more detail.
-- void **RunChildBlocks()**: This is called by Blocks that has child Blocks. Container Blocks like the `IF` and `Loop` uses this to execute the child Blocks when certain conditions are met.
-- void **LogError(string message, System.Exception e = null)**: Use this to show an error message on the console and to set the Block as invalid so that its RunBlock() does not get called again. You can pass an optional Exception object. If you use this in RunBlock() should return immediately after the call tun LogError().
-- void **LogWarning(string message)**: This can be used to print the extra Block information that LogError() does without setting the Block as invalid.
+- `object Run()`: You will call this on a context or param Block to get some value from it. See RunBlock() section above where I describe it in more detail.
+- `void RunChildBlocks()`: This is called by Blocks that has child Blocks. Container Blocks like the `IF` and `Loop` uses this to execute the child Blocks when certain conditions are met.
+- `void LogError(string message, System.Exception e = null)`: Use this to show an error message on the console and to set the Block as invalid so that its RunBlock() does not get called again. You can pass an optional Exception object. If you use this in RunBlock() should return immediately after the call tun LogError().
+- `void LogWarning(string message)`: This can be used to print the extra Block information that LogError() does without setting the Block as invalid.
 
 Documentation
 -------------
@@ -363,8 +363,8 @@ public class Maths_BlockDrawer : BloxBlockDrawer
 
 You will note that each of the functions send the same parameters.
 
-- BloxEditorWindow **ed**: This is a reference to the editor that is making the call to this function. This gives you access to some important functions defined in the BloxEditorWindow class, like DrawBlockContext() and DrawBlockField(). See below.
-- BloxBlockEd **bdi**: This is a reference to the Block; or rather, a container of the Block and the associated Block Definition. This provides you with all the information you need about the editor side of the Block. See below for more info on this class.
+- `BloxEditorWindow ed`: This is a reference to the editor that is making the call to this function. This gives you access to some important functions defined in the BloxEditorWindow class, like DrawBlockContext() and DrawBlockField(). See below.
+- `BloxBlockEd bdi`: This is a reference to the Block; or rather, a container of the Block and the associated Block Definition. This provides you with all the information you need about the editor side of the Block. See below for more info on this class.
 
 **DrawHead()**
 
@@ -399,16 +399,16 @@ public override void DrawProperties(BloxEditorWindow ed, BloxBlockEd bdi)
 
 ### BloxBlockEd
 
-- BloxBlock **b**: The Block. You might want this when drawing the block's properties. See the DrawProperties() example above
-- BloxBlockDef **def**: The Block's Definition data
-- BloxBlockEd **next**: Block following on this one
-- BloxBlockEd **prev**: Block that this one follows on
-- BloxBlockEd **firstChild**: First child of this block if it is a container
-- BloxBlockEd **parentBlock**: The block this one is used in if this is a child of a container (if null then this is directly under event)
-- BloxBlockEd **owningBlock**: The block that owns this one if this is used as a field/ context; else null
-- int **fieldIdx**: Only if owningBlock!=null. This is -1: context or 0..n: used as field at index of owner's paramBlocks.
-- BloxBlockEd **contextBlock**: The context block of this block. Note that is could be null if user did not insert any block yet
-- BloxBlockEd[] **paramBlocks**L The parameter/ field blocks of this block. Note that they might contain null values when user did not insert any block yet in that spot
+- `BloxBlock b`: The Block. You might want this when drawing the block's properties. See the DrawProperties() example above
+- `BloxBlockDef def`: The Block's Definition data
+- `BloxBlockEd next`: Block following on this one
+- `BloxBlockEd prev`: Block that this one follows on
+- `BloxBlockEd firstChild`: First child of this block if it is a container
+- `BloxBlockEd parentBlock`: The block this one is used in if this is a child of a container (if null then this is directly under event)
+- `BloxBlockEd owningBlock`: The block that owns this one if this is used as a field/ context; else null
+- `int fieldIdx`: Only if owningBlock!=null. This is -1: context or 0..n: used as field at index of owner's paramBlocks.
+- `BloxBlockEd contextBlock`: The context block of this block. Note that is could be null if user did not insert any block yet
+- `BloxBlockEd[] paramBlocks`: The parameter/ field blocks of this block. Note that they might contain null values when user did not insert any block yet in that spot
 
 
 ### Samples
