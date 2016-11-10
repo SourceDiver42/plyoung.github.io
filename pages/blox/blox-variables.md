@@ -22,7 +22,7 @@ The `Event Variables` are variables which are temporary and only valid in the ev
 
 ### Blox Variables
 
-`Blox Variables` are related to the Blox they are defined in but unique among instances of Blox attached to GaemObjects. This means that each GameObject that has the same Blox on it will allow you to separately edit the Blox variables (properties) for it. This Variable is identified by the _{b}_ icon. They are normally used where you want to give a Blox properties which can be changed in the Inspector to later be read and used by Blocks. 
+`Blox Variables` are related to the Blox they are defined in but unique among instances of Blox attached to GameObjects. This means that each GameObject that has the same Blox on it will allow you to separately edit the Blox variables (properties) for it. This Variable is identified by the _{b}_ icon. They are normally used where you want to give a Blox properties which can be changed in the Inspector to later be read and used by Blocks. 
 
 To define the Blox variables you need to change to the Variables editor of the Blox editor.
 
@@ -54,6 +54,8 @@ You will note that that Variable Block changes when working with Object Variable
 
 Finally there is the `Global Variables`. These are defined in one place and there can be only one of these kind of variables in the game (they are global after all). These variables are identified by the _{g}_ icon and is defined in the `BloxGlobal` prefab found under `Assets/projectData/Blox/`.
 
+You can access the global variables editor through menu: `Blox > Global Variables`.
+
 ![](img/blox/08.png)
 
 Variables API
@@ -63,7 +65,7 @@ The Variables can also be accessed from script and all follow a similar way to r
 
 ### plyVar
 
-This is a single variable and exposes a few functions to work with a variable. You will normally use the short-cuts defined in other classes and not work with this directly.
+This is a single variable and exposes a few functions to work with a variable. You will normally use the short-cuts defined in other classes and do not work with this directly.
 
 - `System.Type variableType`: This property returns the Type of the value hold by the variable.
 - `object GetValue()`: Returns the value of a variable.
