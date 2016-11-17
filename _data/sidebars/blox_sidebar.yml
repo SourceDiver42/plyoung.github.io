@@ -62,6 +62,9 @@ entries:
   - title: Game Systems
     output: web, pdf
     folderitems:
+    - title: BGS
+      url: /blox-bgs.html
+      output: web, pdf
     - title: Startup & Scenes
       url: /blox-scenes.html
       output: web, pdf
