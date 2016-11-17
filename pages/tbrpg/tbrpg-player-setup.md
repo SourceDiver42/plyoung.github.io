@@ -24,11 +24,9 @@ Movement
 
 - Click Move Mask: Which layers the player can click on when trying to move the party or a character.
 - Click Ray Length: How far the ray should be cast when checking what the player clicked on. Increase this if your camera can zoom out further.
-- Party Position Check: Interval at which party members check their positions relative to the leader (seconds).
-- Sneak Speed: Movement Speed to use when character is sneaking.
-- Walk Speed: Movement Speed to use when character is walking.
-- Run Speed: Movement Speed to use when character is running.
-- Run When Distance: The character will choose the Run Speed when this far from destination. Except when sneaking. Set to 0 to disabled this option.
+- Hold Move Min: How close to the character can the hold-move input (hold mouse button down) occur to be valid. Set this to 0 to disable hold-moving.
+- Hold Move Interval: (seconds) Checking for hold-move is not done every frame. This interval will determine how often the check is done and character destination adjusted as if a click event occured.
+- Party Position Check: (seconds) Interval at which party members check their positions relative to the leader.
 
 Detection
 

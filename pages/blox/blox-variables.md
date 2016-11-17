@@ -109,7 +109,7 @@ GlobalVariables.Instance.SetVarValue("mystringvar", Hello");
 
 ### Object Variables
 
-If a GameOject has the Object Variables component on it you can access and manipulate these variables. The `ObjectVariables` component is also derived from `plyVariablesBehaviour` just like `GlobalVariables` and therefore has the same functions.
+If a GameObject has the Object Variables component on it you can access and manipulate these variables. The `ObjectVariables` component is also derived from `plyVariablesBehaviour` just like `GlobalVariables` and therefore has the same functions.
 
 - `plyVar FindVariable(string name)`: Returns reference to a plyVar.
 - `SetVarValue(string name, object value)`: Set the value of a variable.

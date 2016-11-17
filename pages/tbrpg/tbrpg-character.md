@@ -12,6 +12,16 @@ TBRPG Character
 
 The character component handles the movement of player and enemy characters. It also contains references to information describing the character, like the Character Template it is using and the runtime Stats of the character.
 
+Settings
+--------
+
+These settings are found in the `TBRPG > Character` section of the Blox Game Systems [main editor window](blox.bgs).
+
+- Sneak Speed: Movement Speed to use when character is sneaking.
+- Walk Speed: Movement Speed to use when character is walking.
+- Run Speed: Movement Speed to use when character is running.
+- Run When Distance: The character will choose the Run Speed when this far from destination. Except when sneaking. Set to 0 to disabled this option.
+
 Navigation
 ----------
 

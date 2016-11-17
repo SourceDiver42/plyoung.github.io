@@ -44,7 +44,7 @@ These are the providers defined in Blox and Blox Game Systems. There might be ot
 
 ### Common/Blox Variable
 
-`Result: Depends on Variable Type`
+`Result: Depends on Variable's Value Type`
 
 Return the value of a Global, Object, or [Blox Variable](blox-variables).
 
@@ -80,8 +80,14 @@ Return the value of a [managed property](blox-property-manager.html).
 
 `Result: Float`
 
-Does a mathematical operation on two values. The first one should be a Float to prevent rounding problems. You can click on the 1st or 3rd button to bring up another Data Binding window. This allows you to select what to bind to and watch for changes. The opeation to perform on the values can be selected with the middle button.
+Does a mathematical operation on two values. The first one should be a Float to prevent rounding problems. You can click on the 1st or 3rd button to bring up another Data Binding window. This allows you to select what to bind to and watch for changes. The operation to perform on the values can be selected with the middle button.
 
+### Common/Trigger Event
 
+`Result: Depends on Blox Variable's value Type`
+
+This will trigger a Blox Event on the target object when the value changes of one of the bounds "params". The values of the bound params will also be send to the Event as Event Variables called `param0`, `param1`, etc.
+
+The Event can do whatever calculations are needed and then store the final value in a Blox Variable. The value in this Blox Variable is what the DataProvider will use as its own return value.
 
 
