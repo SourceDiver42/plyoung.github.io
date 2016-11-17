@@ -31,6 +31,9 @@ entries:
     - title: Main Settings
       url: /tbrpg-main-settings.html
       output: web, pdf      
+    - title: Character
+      url: /tbrpg-character.html
+      output: web, pdf
     - title: Player Setup
       url: /tbrpg-player-setup.html
       output: web, pdf
@@ -38,9 +41,6 @@ entries:
       url: /tbrpg-camera.html
       output: web, pdf
 
-    - title: Character
-      url: /tbrpg-character.html
-      output: web, pdf
     - title: Combat
       url: /tbrpg-combat.html
       output: web, pdf

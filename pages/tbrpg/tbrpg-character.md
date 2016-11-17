@@ -15,7 +15,7 @@ The character component handles the movement of player and enemy characters. It 
 Settings
 --------
 
-These settings are found in the `TBRPG > Character` section of the Blox Game Systems [main editor window](blox.bgs).
+These settings are found in the `TBRPG > Character` section of the Blox Game Systems [main editor window](blox-bgs).
 
 - Sneak Speed: Movement Speed to use when character is sneaking.
 - Walk Speed: Movement Speed to use when character is walking.
