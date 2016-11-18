@@ -34,7 +34,7 @@ List of Actions
 
 These are all the Actions available in UnIRPG Core.
 
-- [Actor Actions](actions-actor.html)
+- [Actor Actions](unirpg-actions-actor.html)
   - Attribute (Change Attribute value)
   - Bag: Add or Remove Item
   - Currency: Change (Add, Remove or Set the gold)
@@ -44,14 +44,14 @@ These are all the Actions available in UnIRPG Core.
   - Skill: Add or Remove a Skill
   - Skill: Equip or UnEquip a Skill
   - State (Set or Clear a State)
-- [Object Actions](actions-object.html)
+- [Object Actions](unirpg-actions-object.html)
   - Animation: Play or Stop
   - Destroy
   - EnDisable (Enable or Disable an Object or Component/Behaviour on an Object)
   - Move
   - Spawn (Create)
   - Toggle 'can be targeted'
-- [System Actions](actions-sys.html)
+- [System Actions](unirpg-actions-sys.html)
   - Camera: Activate
   - Debug Log (Show messages on Unity Console)
   - Execution: Branching (If Then)

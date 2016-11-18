@@ -18,7 +18,7 @@ UniRPG's core Actions can be found in the following locations, if you want to st
 The Actions, `\Assets\UniRPG\Scripts\Game\Actions\`
 and action editors, `\Assets\UniRPG\Editor\Scripts\Wizards\Actions`
 
-Do not place your new actions in these folders. Please follow the best practices as laid out [here](advanced.html).
+Do not place your new actions in these folders. Please follow the best practices as laid out [here](unirpg-advanced.html).
 
 I will explain how an action is made via a little example. For the example we want to create an action that will simply output text to the Unity console. Lets call this action, `PLYDebugAction`, and lets assume it is part of a pack of Actions that I will be creating and distributing, so I will be saving my plugin's scripts in `\Assets\UniRPG Plugins\PLY Actions\`.
 

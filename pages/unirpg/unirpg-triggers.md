@@ -33,4 +33,4 @@ The Actions placed into these Event/ Queue Lists will receive the following Subj
 
 - Self: The Trigger that the queue belongs to (this trigger)
 - Target: Is the Player that triggered one of the Player related events. It is also Character that triggered one of the Actor related events
-- All other types will be invalid, except where [indicated different](actions.html)
+- All other types will be invalid, except where [indicated different](unirpg-actions.html)

@@ -31,7 +31,7 @@ Character Attributes can be defined in the [Attributes](blox-attributes) editor.
 In this section you will tell TBRPG which attribute belongs to the required character stats. These must be set up before a character will work properly.
 
 - Health: The character Health (HP). When this reaches 0 the character is considered defeated/ dead.
-- Action Points: The attribute representing the character action points (AP). Action Points are used to determine what actions a character can perform during combat. Everything from movement to usage of a skill or and item will require a certain amount of AP to perform. Once all AP is used the character will not be able to perform more actions until AP is restored. AP is normally restored per turn.
+- Action Points: The attribute representing the character action points (AP). Action Points are used to determine what actions a character can perform during combat. Everything from movement to usage of a skill or an item will require a certain amount of AP to perform. Once all AP is used the character will not be able to perform more actions until AP is restored. AP is normally restored per turn.
 
 Navigation
 ----------

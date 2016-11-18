@@ -15,7 +15,7 @@ Creating a GUI Theme
 
 UniRPG allows you to create GUI Themes which define how the main menu and in-game GUI/ HUD looks and works. You need to follow a few simple rules to make your new Theme visible to and compatible with UniRPG and can do just about anything you want in these themes.
 
-The *Default Fantasy* theme that is distributed with UniRPG can be found under `\Assets\UniRPG\Default Assets\GUI\`. I suggest you follow best practises when creating a new Theme for UniRPG and create a new uniquely named folder for your Theme in the `\Assets\UniRPG Plugins\` folders as explained [here](advanced.html) (especially if you intend on distributing your Theme to other developers using UniRPG).
+The *Default Fantasy* theme that is distributed with UniRPG can be found under `\Assets\UniRPG\Default Assets\GUI\`. I suggest you follow best practises when creating a new Theme for UniRPG and create a new uniquely named folder for your Theme in the `\Assets\UniRPG Plugins\` folders as explained [here](unirpg-advanced.html) (especially if you intend on distributing your Theme to other developers using UniRPG).
 
 GUI Themes are selected in the UniRPG Main Editor/ Database window under `Main -> Project Scenes`, by clicking on the **Select GUI Theme** button. A list of all the Themes that UniRPG detected will be presented.
 

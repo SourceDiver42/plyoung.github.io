@@ -76,7 +76,7 @@ The UniRPG Toolbar will give you quick access to commonly used areas, like openi
 
 ![](/img/unirpg/intro/tbutton6.png) This button will cause the Cache to be refreshed. This will for example look for all your Actor (Player and Non-Player Character) and RPG Item definitions (prefabs) in the project folder.
 
-![](/img/unirpg/intro/tbutton3.png) UniRPG expect certain GameObjects and Components to be present in a **Game Scene**. A Game Scene is the maps that your player plays on. This button will help you quickly create a new Game Scene and then add it to the UniRPG Database. This is a shortcut for menu: `assets -> create -> unirpg scene`. Refer to the section, [Game Scenes](#gamescene), for more information.
+![](/img/unirpg/intro/tbutton3.png) UniRPG expect certain GameObjects and Components to be present in a **Game Scene**. A Game Scene is the maps that your player plays on. This button will help you quickly create a new Game Scene and then add it to the UniRPG Database. This is a shortcut for menu: `assets -> create -> unirpg scene`. Refer to the section, Game Scenes, for more information.
 
 ![](/img/unirpg/intro/tbutton4.png) This will help you add a new **Spawn Point** to the Game Scene and is a shortcut for menu: `gameobject -> create other -> unirpg spawn point`. Please look at the [Spawn Point][] section for more information on Spawn Points.
 

@@ -36,9 +36,9 @@ Please have a look for detailed information on [Actions][] and the various actio
 
 The Actions placed into this Event/ Queue List will receive the following Subject Types:
 
-- All types will be invalid except for Self and where [indicated different](actions.html)
-- When the Event is called by a **[State](database-states.html)** then **Self** will be set to the owner of the State. Most likely a Character object.
-- When the Event is called by an **[Attribute](database-classes.html#attribs)** Value event (on Min/Max/Change) then **Self** will be set to the Character that the Class is on and the Attribute thus belongs to.
+- All types will be invalid except for Self and where [indicated different](unirpg-actions.html)
+- When the Event is called by a **[State](unirpg-database-states.html)** then **Self** will be set to the owner of the State. Most likely a Character object.
+- When the Event is called by an **[Attribute](unirpg-database-classes.html#attribs)** Value event (on Min/Max/Change) then **Self** will be set to the Character that the Class is on and the Attribute thus belongs to.
 - So, Self will never be the Event itself but rather be the Character that the Event is running on because of how it landed on the Character via a State or an Attribute of the Character, via ActorClass, changing.
 
 Actions are executed in order from top to bottom, so in our example targeting of the object is prevented while its death animation play and it is finally destroyed and removed from the scene.

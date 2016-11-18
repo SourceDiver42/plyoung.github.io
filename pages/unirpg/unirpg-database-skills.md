@@ -56,7 +56,7 @@ The Actions placed into this Event/ Queue List will receive the following Subjec
 
 - Self: The user of the skill
 - Targeted: The Current target of the user of this skill
-- All other types will be invalid, except where [indicated different](actions.html)
+- All other types will be invalid, except where [indicated different](unirpg-actions.html)
 
 Actions are executed in order from top to bottom. In our little example here you can see that the Subject's (Targeted) Health Attribute will be affected (decreased) and then an animation called "attack_swing1" will be started on 'Self' (the user of the Skill). It will be a good idea to make the "Use Time" the same length as this animation but is not necessary since this skill can be "interrupted". The important action, which was almost instant - decreasing the HP, already took place by the time the animation starts.
 

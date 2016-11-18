@@ -69,7 +69,7 @@ The Actions placed into these Event/ Queue Lists will receive the following Subj
 
 - Self: The Character that the queue belongs to
 - TargetedBy: The Character that is trying to target/untarget/interact with this Character (Not set on GetHit and Death)
-- All other types will be invalid, except where [indicated different](actions.html)
+- All other types will be invalid, except where [indicated different](unirpg-actions.html)
 
  
 ### Detect Player ### 

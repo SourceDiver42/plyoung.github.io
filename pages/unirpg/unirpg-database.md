@@ -45,7 +45,7 @@ Loading & Saving
 
 ![](/img/unirpg/db/win23.png)
 
-UniRPG allows the designer to choose what will handle the Loading & Saving of game state via Plugins (or LoadSave Providers). Please have a look at the advanced docs to learn how a new [LoadSave Provider](advanced-loadsave.html) can be created for UniRPG or how plugins access the Loading & Saving System of UnIRPG.
+UniRPG allows the designer to choose what will handle the Loading & Saving of game state via Plugins (or LoadSave Providers). Please have a look at the advanced docs to learn how a new [LoadSave Provider](unirpg-advanced-loadsave.html) can be created for UniRPG or how plugins access the Loading & Saving System of UnIRPG.
 
 The Default LoadSave Provider makes use of Unity's [PlayerPrefs](http://docs.unity3d.com/Documentation/ScriptReference/PlayerPrefs.html) feature. Other providers might provide different ways of saving data, like saving it to an XML file on disc.
 

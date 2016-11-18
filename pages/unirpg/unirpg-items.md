@@ -31,7 +31,7 @@ You can assign a Cost to the item which will dictate what its buy and sell price
 
 The **Max Stack** field determines how many of this item can be stacked in a Bag. A stack is when more than one copy of the same item is in a bag slot. Things like potions are normally stacked to a certain amount, like (20), while items like swords would not stack and only (1) can occupy a bag slot at a time.
 
-The **Allow auto-pickup** option can be set if you want the player to auto-pickup the item when he runs over it. The auto-pickup system must be on under [Game Settings][] if you want this to work. You also need to create a [trigger](#trigger) for this to work.
+The **Allow auto-pickup** option can be set if you want the player to auto-pickup the item when he runs over it. The auto-pickup system must be on under [Game Settings][] if you want this to work. You also need to create a trigger for this to work.
 
 You may set a **Category** and **Sub Type** if you defined these in the [Database][].
 
@@ -51,11 +51,11 @@ The **Target Slots** determines to which equip slots the item can be equipped. T
 
 The Events you see will depend on whether you chose this Item to Trigger OnUse or Equip.
 
-**On Targeted** will trigger when the item is targeted. For example when the player clicks on it. The *Max Targetable Distance* is used to set from how far (in meters) the Item can be targeted. Use (0) if you want to disable this - make the distance unlimited. You will need a [collider](#trigger) on the item if you want the player able to target the item.
+**On Targeted** will trigger when the item is targeted. For example when the player clicks on it. The *Max Targetable Distance* is used to set from how far (in meters) the Item can be targeted. Use (0) if you want to disable this - make the distance unlimited. You will need a collider on the item if you want the player able to target the item.
 
 **On UnTarget** will trigger when the item is deselected/ removed as target.
 
-**On Pickup** is triggered when the item is being interacted with. The *Max Interact Distance* is how far the player has to be (in meters) from the Item before he can pick it up, if the auto-pickup system is not enabled. It is good to keep this to 1.5 to 2 meters. You will need a [collider](#trigger) if you want the player able to target the Item and pick it up.
+**On Pickup** is triggered when the item is being interacted with. The *Max Interact Distance* is how far the player has to be (in meters) from the Item before he can pick it up, if the auto-pickup system is not enabled. It is good to keep this to 1.5 to 2 meters. You will need a collider if you want the player able to target the Item and pick it up.
 
 **On Use** will be triggered when the item is used from a bag. For example when the player try to use a potion from his bag.
 
@@ -67,7 +67,7 @@ The Actions placed into these Event/ Queue Lists will receive the following Subj
 
 - Self: The RPGItem that the queue belongs to
 - TargetedBy: The Character that is trying to Target/ UnTarget/ Pickup this Item
-- All other types will be invalid, except where [indicated different](actions.html)
+- All other types will be invalid, except where [indicated different](unirpg-actions.html)
 
 In the case of **Use**/ **Equip** and **UnEquip** the Subject Types will be a bit different.
 
@@ -75,7 +75,7 @@ In the case of **Use**/ **Equip** and **UnEquip** the Subject Types will be a bi
 - TargetedBy: will be invalid
 - Targeted: will be set to the object targeted by the Character while it was trying to **Use** this Item. This is still null for **Equip** and **UnEquip**
 - EquipTarget: will be the character trying to Use/ Equip/ UnEquip this Item
-- All other types will be invalid, except where [indicated different](actions.html)
+- All other types will be invalid, except where [indicated different](unirpg-actions.html)
 
 ### Trigger & Collider ### 
 

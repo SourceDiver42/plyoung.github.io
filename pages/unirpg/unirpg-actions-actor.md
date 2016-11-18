@@ -59,12 +59,12 @@ With this action you can Add, Remove or Set the Currency of the selected Subject
 DefaultNPC: Change Type 
 -----------------------
 
-This action works only for the [Default NPC](actors-default.html). It is sued to change the NPC's type between Friendly, Neutral and Hostile.
+This action works only for the [Default NPC](unirpg-actors-default.html). It is sued to change the NPC's type between Friendly, Neutral and Hostile.
 
 EnDisable Character 
 -------------------
 
-This action works only for the Character Types like the [Default NPC & Player](actors-default.html). It is used to turn on/ off the AI (or player control) of the Character.
+This action works only for the Character Types like the [Default NPC & Player](unirpg-actors-default.html). It is used to turn on/ off the AI (or player control) of the Character.
 
 Equip Slot 
 ----------

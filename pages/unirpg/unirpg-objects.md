@@ -26,7 +26,7 @@ You can enter a name, description, some private notes and assign up to three ima
 
 ### Events & Actions ### 
 
-**On Targeted** will trigger when the RPG Object is targeted. For example when the player clicks on it. The *Max Targetable Distance* is used to set from how far (in meters) the RPG Object can be targeted. Use (0) if you want to disable this - make the distance unlimited. You will need a [collider](#collider) on the RPG Object if you want the player able to target the RPG Object.
+**On Targeted** will trigger when the RPG Object is targeted. For example when the player clicks on it. The *Max Targetable Distance* is used to set from how far (in meters) the RPG Object can be targeted. Use (0) if you want to disable this - make the distance unlimited. You will need a collider on the RPG Object if you want the player able to target the RPG Object.
 
 **On UnTarget** will trigger when the RPG Object is deselected/ removed as target.
 
@@ -36,7 +36,7 @@ The Actions placed into these Event/ Queue Lists will receive the following Subj
 
 - Self: The RPGObject that the queue belongs to
 - TargetedBy: The Character that is trying to Target/ UnTarget/ Inteact this Object
-- All other types will be invalid, except where [indicated different](actions.html)
+- All other types will be invalid, except where [indicated different](unirpg-actions.html)
 
 ### Collider ### 
 
