@@ -56,7 +56,7 @@ TBRPG makes use of [Unity Animation System](https://docs.unity3d.com/Manual/Anim
 
 The following parameters should be defined in the animator of a character, even if the animator will not make use of the parameters:
 
-- speed: (float) This will be updated with the NavMeshAgent's velocity magnitude and is how you can tell how fast the character is moving. This can be used to determine when a character should play its movement animation. A simple transition can be from idle to walk when the `speed` is greater than 0.4 and then back to idle from walk when it is less than 0.1. The speed at which characters move can be set up in the [Player > Movement](tbrpg-player-setup) section of TBRPG editor window.
+- speed: (float) This will be updated with the NavMeshAgent's velocity magnitude and is how you can tell how fast the character is moving. This can be used to determine when a character should play its movement animation. A simple transition can be from idle to walk when the `speed` is greater than 0.4 and then back to idle from walk when it is less than 0.1.
 - combat: (bool) Is True while the character is in combat. Could be used to play combat stance animations.
 - sneaking: (bool) Is True while the character is in sneak mode.
 

@@ -34,7 +34,7 @@ entries:
     - title: Character
       url: /tbrpg-character.html
       output: web, pdf
-    - title: Player Setup
+    - title: Player
       url: /tbrpg-player-setup.html
       output: web, pdf
     - title: Camera
