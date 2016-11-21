@@ -24,6 +24,14 @@ These settings are found in the `TBRPG > Character` section of the Blox Game Sys
 - Run Speed: Movement Speed to use when character is running.
 - Run When Distance: The character will choose the Run Speed when this far from destination. Except when sneaking. Set to 0 to disabled this option.
 
+**Combat**
+
+- Combat Movement: The movement system used during combat.
+	+ Action Points: The character can move a certain distance per Action Points spend (AP). The system will keep track of how far the character moved in the same turn and not deduct extra AP if moving only a small lengths. Example; let's assume it costs 1AP to move a total of 3 meters. The player choose to move 2 meter so 1AP is deducted. In the same combat turn the player can move another 1 meter without losing another Action Point since there is still a distance of 1 meter left he could move on the previously spend AP. If however the player moved 2 meter another 1AP is needed before he could move that far.
+	+ Distance Based: There is a set distance the character can move per turn. This option is used when it should not cost any AP to move. You will have to bind two attributes below to indicate the normal and max distances the character can move per turn. Normal is when the character can move and use a skill. If the character moves the max distance however then he might not be able to use a skill (depending on further settings).
+- Max Distance Per AP: Only when Combat Movement is set to Action Points. How far the character can move per AP spend.
+- Max Moved AP Deduction: Only when Combat Movement is set to Distance Based. This is the amount of Action Points (AP) to deduct from the character's AP pool when it moved the max distance. This is normally used in combination with a game design where you do not want the character to perform any skills after moving the max distance or be able to use only a sub-set of skills or other actions. For example; a player could have a total of 2AP per turn. It costs 2AP to fire a weapon but if the character moved a max distance you can deduct 2AP and thus prevent the player from using his weapon. You could even select to deduct only 1AP and thus still allow an action which costs only 1AP, for example healing self or using an item from the inventory (of you set these actions to cost only 1AP).
+
 **Attributes**
 
 Character Attributes can be defined in the [Attributes](blox-attributes) editor. Click on the (define attributes) link to be taken to the attributes editor.
@@ -32,6 +40,9 @@ In this section you will tell TBRPG which attribute belongs to the required char
 
 - Health: The character Health (HP). When this reaches 0 the character is considered defeated/ dead.
 - Action Points: The attribute representing the character action points (AP). Action Points are used to determine what actions a character can perform during combat. Everything from movement to usage of a skill or an item will require a certain amount of AP to perform. Once all AP is used the character will not be able to perform more actions until AP is restored. AP is normally restored per turn.
+- Move Distance: Only when Combat Movement is set to Distance Based. The Attribute Definition representing the character's 'Normal' Combat Movement Distance allowed per turn.
+- Move Distance Max: Only when Combat Movement is set to Distance Based. The Attribute Definition representing the character's 'Max' Combat Movement Distance allowed per turn.
+
 
 Navigation
 ----------
