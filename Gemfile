@@ -1,6 +1,6 @@
-source "https://rubygems.org"
+source "http://rubygems.org"
 
 # gem "rails"
-gem 'github-pages'
-gem 'jekyll'
-gem 'wdm'
+gem 'github-pages', group: :jekyll_plugins
+#gem 'jekyll'
+#gem 'wdm'

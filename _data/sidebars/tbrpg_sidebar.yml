@@ -31,14 +31,17 @@ entries:
     - title: Main Settings
       url: /tbrpg-main-settings.html
       output: web, pdf      
+    - title: Camera
+      url: /tbrpg-camera.html
+      output: web, pdf
     - title: Character
       url: /tbrpg-character.html
       output: web, pdf
     - title: Player
       url: /tbrpg-player-setup.html
       output: web, pdf
-    - title: Camera
-      url: /tbrpg-camera.html
+    - title: Enemy
+      url: /tbrpg-enemy.html
       output: web, pdf
 
     - title: Combat

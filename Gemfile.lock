@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     activesupport (4.2.7)
       i18n (~> 0.7)
@@ -128,15 +128,12 @@ GEM
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     unicode-display_width (1.1.1)
-    wdm (0.1.1)
 
 PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
   github-pages
-  jekyll
-  wdm
 
 BUNDLED WITH
-   1.13.1
+   1.13.6

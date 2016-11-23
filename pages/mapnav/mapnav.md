@@ -14,7 +14,7 @@ MapNav 2
 
 It has various functions you will need when working with a grid map in these types of games; like getting the neighbouring tiles, or finding a path from one tile to another.
 
-Have a look at [Battlemass 2][2], a game that were build with a basic version of this kit. You can also grab the [PDF Documentation][4] to learn more about the features available in the kit and API.
+See [PDF Documentation][4] to learn more about the features available in the kit and its API.
 
 - Full source code (C#)
 - Easily create and use custom node/ tile class for properties specific to your game

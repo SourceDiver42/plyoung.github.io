@@ -62,7 +62,3 @@ The following parameters should be defined in the animator of a character, even 
 
 	![](img/tbrpg/08.png)
 
-Enemy
------
-
-This Component must be on any character which can start combat with the player party.
