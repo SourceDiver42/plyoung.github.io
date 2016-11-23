@@ -3,7 +3,7 @@ title: Turn Based RPG Characters
 keywords: unity3d, blox, visual scripting, programming, tactical, turn based rpg, tbrpg
 sidebar: tbrpg_sidebar
 toc: false
-permalink: tbrpg-character.html
+permalink: tbrpg-enemy.html
 folder: tbrpg
 ---
 
