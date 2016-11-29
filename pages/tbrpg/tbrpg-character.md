@@ -62,3 +62,15 @@ The following parameters should be defined in the animator of a character, even 
 
 	![](img/tbrpg/08.png)
 
+Sample Character Setup
+----------------------
+
+In this example I used the [MCS Female character](https://assetstore.unity3d.com/#!/publisher/13832?aid=1101lGtB).
+
+All you really need to add to a character object is the [Animator](https://docs.unity3d.com/Manual/AnimatorControllers.html) component and add a controller in the Controller property of the Animator.
+
+You might also want to add a NavMeshAgent so that you can configure it. If you do not, one will be added automatically with default settings.
+
+A Capsule Collider can also be added since a Collider will be needed for the character to be selectable and to be able to trigger Triggers in the scene. Again, this will be added automatically but the default settings might not be perfect for your character's shape. 
+
+![](img/tbrpg/09.png)

@@ -18,7 +18,9 @@ Settings
 --------
 
 - Initial Value: This is the value to initialise this Attribute to at runtime.
+	+ modifier: The modifier is used to update the value automatically. For example, updating the Level value when the XP value changes.
 - Initial Max: The value to initialise the Attribute's Max to at runtime. This is the maximum value the attribute can reach. For something like Heath this will be the character's max HP and Value should be initialised to this. This is a max value which can change over time. For Strength, Level or XP you would set this to some absolute max the character can even reach during the game.
+	+ modifier: The modifier is used to update the max value automatically. For example, changing the Max Health when the character's Level increases.
 - Init Value=Max: Should Value be set to Max whenever Max changes? This would normally be enabled for attributes like the character's Health, Stamina, Mana, or other values which can be consumed during a game session. Each time Max is updated the Value will be updated too and 'reset' to the Max value.
 
 Meta Properties

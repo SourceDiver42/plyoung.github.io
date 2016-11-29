@@ -10,7 +10,7 @@ folder: blox
 Property Manager
 ================
 
-The properties manager allows you to create named properties which can then be accessed via property manager Blocks to set values on or get values from these properties. The setters and getters of these properties can be bound to static fields, properties or methods allowing you to specify what to invoke when the property's value should be set or get.
+The properties manager allows you to create named properties which can then be accessed via property manager Blocks to set values on or get values from these properties. The setters and getters of these properties can be bound to static fields, properties or methods allowing you to specify what to invoke when the property's value should be set or get. This system relies on the DataBinding system; learn more about [DataBinding here](blox-databinding).
 
 This differ from [Blox Global Variables](blox-variables) in that it allows you to easily set or get values in APIs like UnityEngine or 3rd party tools without having to use Blocks specific to those APIs. Other systems, like the [UI Updaters](blox-ui-updaters), can then make use of these properties to read and write the property values as needed.
 
@@ -30,5 +30,5 @@ The getter button allows you to bind to the member which will be used when you w
 
 The setter buttons allows you to bind to the member which will be used when you change the value of this property.
 
-**Be careful** with the kind of properties you bind to. If you get an error during the Databinding Initialize then you are probably trying to bind to something which is not be ready to read from by the time the property manager is starting up (which happens very early in game startup).
+**Be careful** with the kind of properties you bind to. If you get an error during the Databinding Initialize then you are probably trying to bind to something which is not ready to be read from by the time the property manager is starting up (which happens very early in game startup).
 
