@@ -42,6 +42,17 @@ Data Providers
 
 These are the providers defined in Blox and Blox Game Systems. There might be other providers defined by plugins; in which case you should find more information on them in the documentation for that plugin.
 
+### Common/Attribute
+
+`Result: Float`
+
+Return the Value of Max Value of an Attribute.
+
+The "from" option is used to determine from where to get the Attribute.
+
+- Caller: Is used to get the Attribute from the same owner (or the caller) making use of this Attribute Data provider. This is useful when setting up binds where you do not know ahead of time who the owner or target should be. For example when setting up the Value/ Max modifiers of Attribute Definitions.
+- Target: Allows you to specify a target. This will normally come form a Property type bind.
+
 ### Common/Blox Variable
 
 `Result: Depends on Variable's Value Type`
@@ -76,9 +87,23 @@ The `And` and `Or` options should only be used with values which result in a Boo
 
 This returns a value mapped to a curve. You need to specify an input value (float) which runs along the X axis (horizontal) of the curve. The Y axis value (vertical) will be the returned value depending on what the input value is.
 
+You can choose to round the resulting value. This is useful when wanting to work with whole numbers since the curve is returning real numbers (numbers that have decimal representations).
+
+Note that the curve is initialised to a value range of 0 to 1. You can use the mouse scroll wheel to "zoom out" and drag the end-point (last key) of the curve further to cover the range of values needed.
+
 In this example the input value is `0.5` and will result in an output value of `0.25`.
 
 ![](img/blox/32.png)
+
+### Common/Graph Mapped Values
+
+`Result: Float`
+
+Similar to the Curve this will return a value dependant on an input value. You can however choose which of the axis the input value is measured against. The other axis will then be the return value.
+
+If using input value as Y and X as return value the 1st Y value which matches or is close to the input value will be returned. So graphs with Y values going up and down over its length will not work. The Y values should gradually increase from left to right for the length of X as shown in the image below.
+
+![](img/blox/34.png)
 
 ### Common/Managed Property
 
