@@ -70,6 +70,16 @@ The `And` and `Or` options should only be used with values which result in a Boo
 - True or False = True
 - False or True = True
 
+### Common/Curve Data Map
+
+`Result: Float`
+
+This returns a value mapped to a curve. You need to specify an input value (float) which runs along the X axis (horizontal) of the curve. The Y axis value (vertical) will be the returned value depending on what the input value is.
+
+In this example the input value is `0.5` and will result in an output value of `0.25`.
+
+![](img/blox/32.png)
+
 ### Common/Managed Property
 
 `Result: Depends on Property Type`
