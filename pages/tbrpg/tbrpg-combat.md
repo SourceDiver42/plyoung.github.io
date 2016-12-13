@@ -19,4 +19,4 @@ These Events are triggered globally, meaning they can be in a Blox on any GameOb
 
 - `OnCombatStarted` Called when Combat has started. This is called after the first character's turn started . So OnCombatTurnChange will be called before this.
 - `OnCombatEnded` Called when Combat ended.
-- `OnCombatTurnChange` Called when a it becomes another character's turn.
+- `OnCombatTurnChange` Called when it becomes another character's turn.

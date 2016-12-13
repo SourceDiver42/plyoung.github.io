@@ -16,33 +16,21 @@ You will normally interact with this system when another requires it. When you n
 
 ![](img/blox/26.png)
 
-### Constant
+Blackboard
+----------
 
-This option allows you to bind to a value which will not change. This could be a value which to check the value of a bound property against. In the splash screens manager example a boolean value (true) is bound to for the second field of a condition check.
+Some Data Providers will show an option to "set" a value. For example when you make use of the [Properties Manager](blox-property-manager.html) setter button or the [UI Button Action](blox-ui-updaters.html#button-action). In other cases, like the Member Bind, the bind might require one or more values to set a bound property/ field or when invoking a bound function.
 
-### Property
+The value(s) can come from either other Binds (DataProperty) or from the "Blackboard".
 
-Here you will find a list of properties that can be bound to. These include certain public fields, properties and methods. In the splash screens manager example the Bootstrap's "IsDone" property was chosen to watch when that turns from False to True.
-
-If you choose a non-static property then a context object for that property must be specified. There are a few ways to get a reference to the wanted object.
-
-- With Name: Find the first GameObject with the given Name. This object must have the component on it which the property is defined in.
-- With Tag: Find the first GameObject with the given Tag. This object must have the component on it which the property is defined in.
-- Of Type: This will find the first GameObject which has the component on it which the property is defined in.
-- Instance: This will present you with a list of all static members which returns a reference to the type which declares the property. This is useful for working with singleton types.
-- Owner: Is useful for binds done directly on a GameObject, for example when you are setting up a [Button Action](blox-ui-updaters) component. This refers to the object on which the data binding was done. If the data binding was done in the [Properties Manager](blox-property-manager) for example then chances are good yo would not use 'owner' since the owner in that case is the Property Manager itself.
-
-### Data Provider
-
-Here you can bind to another data provider. Further options will be presented depending on what Data Provider is chosen.
-
+The Blackboard is an area where you can define a set of named values. In some cases, like the [Properties Manager](blox-property-manager.html), the system might add named values to the Blackboard (in this case a value called "value"). Only certain systems will present a Blackboard, like the [UI Button Action](blox-ui-updaters.html#button-action).
 
 Data Providers
 --------------
 
 These are the providers defined in Blox and Blox Game Systems. There might be other providers defined by plugins; in which case you should find more information on them in the documentation for that plugin.
 
-### Common/Attribute
+### Attribute
 
 `Result: Float`
 
@@ -53,17 +41,17 @@ The "from" option is used to determine from where to get the Attribute.
 - Caller: Is used to get the Attribute from the same owner (or the caller) making use of this Attribute Data provider. This is useful when setting up binds where you do not know ahead of time who the owner or target should be. For example when setting up the Value/ Max modifiers of Attribute Definitions.
 - Target: Allows you to specify a target. This will normally come form a Property type bind.
 
-### Common/Blox Variable
+For setter binds you need to specify how the value will be set. This can be from a value in the Blackboard or another data bind.
 
-`Result: Depends on Variable's Value Type`
+### Blox Event
 
-Return the value of a Global, Object, or [Blox Variable](blox-variables).
+`Result: Depends on Blox Variable's value Type`
 
-For the Blox and Object variable types you need to specify from which objects these variables will be retrieved. You can choose to find the object by its name or tag, or to use "owner" which is the object on which the data bind was created. "Owner" is useful for binds done directly on a GameObject, for example when you are setting up a [Button Action](blox-ui-updaters) component.
+This will trigger a Blox Event on the target object when the value changes of one of the bounds "params". The values of the bound params will also be send to the Event as Event Variables called `param0`, `param1`, etc.
 
-Blox variables also require that you select which Blox the variable was defined in.
+The Event can do whatever calculations are needed and then store the final value in a Blox Variable. The value in this Blox Variable is what the DataProvider will use as its own return value.
 
-### Common/Comparison Check
+### Comparison Check
 
 `Result: Boolean (True or False)`
 
@@ -81,7 +69,11 @@ The `And` and `Or` options should only be used with values which result in a Boo
 - True or False = True
 - False or True = True
 
-### Common/Curve Data Map
+### Constant
+
+This allows you to bind to a value which will not change.
+
+### Curve Data Map
 
 `Result: Float`
 
@@ -95,7 +87,7 @@ In this example the input value is `0.5` and will result in an output value of `
 
 ![](img/blox/32.png)
 
-### Common/Graph Mapped Values
+### Graph Mapped Values
 
 `Result: Float`
 
@@ -105,24 +97,44 @@ If using input value as Y and X as return value the 1st Y value which matches or
 
 ![](img/blox/34.png)
 
-### Common/Managed Property
+### Managed Property
 
 `Result: Depends on Property Type`
 
 Return the value of a [managed property](blox-property-manager.html).
 
-### Common/Maths Operation
+For setter binds you need to specify how the value will be set. This can be from a value in the Blackboard or another data bind.
+
+### Maths Operation
 
 `Result: Float`
 
 Does a mathematical operation on two values. The first one should be a Float, if you are working with float values, to prevent rounding problems. You can click on the 1st or 3rd button to bring up another Data Binding window. This allows you to select what to bind to and watch for changes. The operation to perform on the values can be selected with the middle button.
 
-### Common/Trigger Event
+### Member Bind
 
-`Result: Depends on Blox Variable's value Type`
+This allows you to bind to a class member (public fields, properties and methods/ functions). You will only see members from types which was set to be included in the [Blocks Settings](blox-start.html#blox-settings).
 
-This will trigger a Blox Event on the target object when the value changes of one of the bounds "params". The values of the bound params will also be send to the Event as Event Variables called `param0`, `param1`, etc.
+If you choose a non-static property then a context object for that property must be specified. There are a few ways to get a reference to the context object.
 
-The Event can do whatever calculations are needed and then store the final value in a Blox Variable. The value in this Blox Variable is what the DataProvider will use as its own return value.
+- With Name: Find the first GameObject with the given Name. This object must have the component on it which the property is defined in.
+- With Tag: Find the first GameObject with the given Tag. This object must have the component on it which the property is defined in.
+- Of Type: This will find the first GameObject which has the component on it which the property is defined in.
+- Instance: This will present you with a list of all static members which returns a reference to the type which declares the property. This is useful for working with singleton types.
+- Owner: Is useful for binds done directly on a GameObject, for example when you are setting up a [Button Action](blox-ui-updaters) component. This refers to the object on which the data binding was done. If the data binding was done in the [Properties Manager](blox-property-manager) for example then chances are good you would not use 'owner' since the owner in that case is the Property Manager itself.
 
+For setter binds you need to specify how the value will be set. This can be from a value in the Blackboard or another data bind.
 
+For method binds (setter or getter) you might see one or more arguments which must be send on to the method when it is invoked. The values for tehse can be set from the Blackboard or another data bind.
+
+### Variable
+
+`Result: Depends on Variable's Value Type`
+
+Return the value of a [Global, Object, or Blox Variable](blox-variables.html).
+
+For the Blox and Object variable types you need to specify from which objects these variables will be retrieved. You can choose to find the object by its name or tag, or to use "owner" which is the object on which the data bind was created. "Owner" is useful for binds done directly on a GameObject, for example when you are setting up a [Button Action](blox-ui-updaters.html) component.
+
+Blox variables also require that you select which Blox the variable was defined in.
+
+For setter binds you need to specify how the value will be set. This can be from a value in the Blackboard or another data bind.

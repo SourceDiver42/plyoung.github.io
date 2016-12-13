@@ -27,7 +27,7 @@ You will typically want to mark the scene containing your splash screens and int
 
 Have a look at the [splash screens manager](blox-splash-screens-manager.html) to learn how to control when splash screens are shown.
 
-Events
+Events 
 ------
 
 The Bootstrap will trigger bother Unity and Blox events. The Blox Events are only triggered in Blox on the same object as the bootstrap component.

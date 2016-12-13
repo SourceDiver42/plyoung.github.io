@@ -19,7 +19,7 @@ These components can be found under menu: `Component > Blox > GUI > Updaters`
 They all have similar properties:
 
 - Target: is the UI Element which this updater will manage. If you do not set this then the updater will automatically look for the correct element on he same object as the UI updater.
-- Property Name: The [Properties Manager](blox-property-manager) will be used to bind the data. You need to specify the name of the property to use as set up in the Properties Manager.
+- Property Name: The [Properties Manager](blox-property-manager.html) will be used to bind the data. You need to specify the name of the property to use as set up in the Properties Manager.
 
 The rest of the options will depend on what kind of UI Updater you are using.
 
@@ -36,5 +36,6 @@ The rest of the options will depend on what kind of UI Updater you are using.
 Button Action
 -------------
 
-The Button Action gives you a way to trigger a bind of a Property or DataProvider when a UI Button's Click event is triggered. The most common use would be to bind to a Property (which can be either property, field or method members of a type). It also allows you to send values to the bound method or set the value on a bound property or field.
+The Button Action gives you a way to trigger a bind of a DataProvider when a UI Button's Click event is triggered. The most common use would be to bind to a member (which can be either property, field or method members of a type). It also allows you to send values to the bound method or set the value on a bound property or field.
 
+The [Blackboard](blox-databinding.html#blackboard) allows you to define values which can be accessed in the Data bind. YTou could for example use this to send values to a Member Bind like a function which requires one or more arguments when invoked.

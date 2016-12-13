@@ -10,9 +10,9 @@ folder: blox
 Property Manager
 ================
 
-The properties manager allows you to create named properties which can then be accessed via property manager Blocks to set values on or get values from these properties. The setters and getters of these properties can be bound to static fields, properties or methods allowing you to specify what to invoke when the property's value should be set or get. This system relies on the DataBinding system; learn more about [DataBinding here](blox-databinding).
+The properties manager allows you to create named properties which can then be accessed via property manager Blocks to set values on or get values from these properties. The setters and getters of these properties can be bound to static fields, properties or methods allowing you to specify what to invoke when the property's value should be set or get. This system relies on the DataBinding system; learn more about [DataBinding here](blox-databinding.html).
 
-This differ from [Blox Global Variables](blox-variables) in that it allows you to easily set or get values in APIs like UnityEngine or 3rd party tools without having to use Blocks specific to those APIs. Other systems, like the [UI Updaters](blox-ui-updaters), can then make use of these properties to read and write the property values as needed.
+This differ from [Blox Global Variables](blox-variables.html) in that it allows you to easily set or get values in APIs like UnityEngine or 3rd party tools without having to use Blocks specific to those APIs. Other systems, like the [UI Updaters](blox-ui-updaters.html), can then make use of these properties to read and write the property values as needed.
 
 It was mainly developed to make it easier to manage game settings, like setting the game to fullscreen or changing the quality settings but can be used with any member that the system can bind to. There is an option to save the value you set and to automatically restore it when the game starts. This is useful for when you want to use the Properties Manager to manage your game settings and restore them when the game starts.
 
@@ -28,7 +28,7 @@ Next to the name you will see the type of the property's value. This could be an
 
 The getter button allows you to bind to the member which will be used when you want to the value from this property.
 
-The setter buttons allows you to bind to the member which will be used when you change the value of this property.
+The setter buttons allows you to bind to the member which will be used when you change the value of this property. The Properties Manager will set the Blackboard value called `value`. You can use this value with setters to restore a value the Properties Manager saved before. See Data Providers to learn more about the [Blackboard](blox-databinding.html#blackboard).
 
 **Be careful** with the kind of properties you bind to. If you get an error during the Databinding Initialize then you are probably trying to bind to something which is not ready to be read from by the time the property manager is starting up (which happens very early in game startup).
 

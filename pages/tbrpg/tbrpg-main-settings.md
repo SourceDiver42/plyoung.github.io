@@ -14,5 +14,6 @@ The main settings can be found under the TBRPG tab of the Blox Game Systems Wind
 
 Flow
 
-- UI Hud Scene Name: The scene to load when a game map is loaded. This is the scene which includes the UI to show player inventory, info, combat stats, dialogue, etc. A sample scene can be found at `Assets/plyoung/TBRPG/GUI/UI_HUD.unity
+- UI Hud Scene Name: The scene to load when a game map is loaded. This is the scene which includes the UI to show player inventory, info, combat stats, dialogue, etc. A sample scene can be found at `Assets/plyoung/TBRPG/GUI/UI_HUD.unity`
+
 

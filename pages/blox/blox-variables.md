@@ -10,7 +10,7 @@ folder: blox
 Variables
 =========
 
-Variables is a way to add and manipulate data in the game. A variable is something which holds a value, or in the case of List/Array variables a list if values.
+Variables is a way to add and manipulate data in the game. A variable is something which holds a value, or in the case of List/Array variables a list of values.
 
 There are 4 kinds of Variables and they are all accessed via the `Common > Variable` Block in Blox. This Block allows you to either get the value of a variable or set the value of a variable.
 
@@ -46,13 +46,13 @@ Next we have `Object Variables`. These are useful when you want to add data to a
 
 These variables are identified by the _{x}_ icon. They are added to a GameObject via menu: `Component > Blox > Object Variables`. 
 
-You will note that that Variable Block changes when working with Object Variables. It requires additional information, the GameObject which has the ObjectVariables component from where to get the named variable. It defaults to `self: GameObject`, meaning the GameObject on which this Blox is currently running but you can change this to another GameObject if needed.
+You will note that the Variable Block changes when working with Object Variables. It requires additional information, the GameObject which has the ObjectVariables component from where to get the named variable. It defaults to `self: GameObject`, meaning the GameObject on which this Blox is currently running but you can change this to another GameObject if needed.
 
 ![](img/blox/07.png)
 
 ### Global Variables
 
-Finally there is the `Global Variables`. These are defined in one place and there can be only one of these kind of variables in the game (they are global after all). These variables are identified by the _{g}_ icon and is defined in the `BloxGlobal` prefab found under `Assets/projectData/Blox/`.
+Finally there are the `Global Variables`. These are defined in one place and there can be only one of these kind of variables in the game (they are global after all). These variables are identified by the _{g}_ icon and is defined in the `BloxGlobal` prefab found under `Assets/projectData/Blox/`.
 
 You can access the global variables editor through menu: `Blox > Global Variables`.
 
