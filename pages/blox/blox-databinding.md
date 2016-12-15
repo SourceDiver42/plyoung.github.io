@@ -121,7 +121,7 @@ If you choose a non-static property then a context object for that property must
 - With Tag: Find the first GameObject with the given Tag. This object must have the component on it which the property is defined in.
 - Of Type: This will find the first GameObject which has the component on it which the property is defined in.
 - Instance: This will present you with a list of all static members which returns a reference to the type which declares the property. This is useful for working with singleton types.
-- Owner: Is useful for binds done directly on a GameObject, for example when you are setting up a [Button Action](blox-ui-updaters) component. This refers to the object on which the data binding was done. If the data binding was done in the [Properties Manager](blox-property-manager) for example then chances are good you would not use 'owner' since the owner in that case is the Property Manager itself.
+- Owner: Is useful for binds done directly on a GameObject, for example when you are setting up a [Button Action](blox-ui-updaters.html) component. This refers to the object on which the data binding was done. If the data binding was done in the [Properties Manager](blox-property-manager.html) for example then chances are good you would not use 'owner' since the owner in that case is the Property Manager itself.
 
 For setter binds you need to specify how the value will be set. This can be from a value in the Blackboard or another data bind.
 

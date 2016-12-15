@@ -15,7 +15,7 @@ The character component handles the movement of player and enemy characters. It 
 Settings
 --------
 
-These settings are found in the `TBRPG > Character` section of the Blox Game Systems [main editor window](blox-bgs).
+These settings are found in the `TBRPG > Character` section of the Blox Game Systems [main editor window](blox-bgs.html).
 
 **Movement**
 
@@ -35,7 +35,7 @@ These settings are found in the `TBRPG > Character` section of the Blox Game Sys
 
 **Attributes**
 
-Character Attributes can be defined in the [Attributes](blox-attributes) editor. Click on the (define attributes) link to be taken to the attributes editor.
+Character Attributes can be defined in the [Attributes](blox-attributes.html) editor. Click on the (define attributes) link to be taken to the attributes editor.
 
 In this section you will tell TBRPG which attribute belongs to the required character stats. These must be set up before a character will work properly.
 
@@ -61,7 +61,7 @@ The following parameters should be defined in the animator of a character, even 
 - combat: (bool) Is True while the character is in combat. Could be used to play combat stance animations.
 - sneaking: (bool) Is True while the character is in sneak mode.
 
-	![](img/tbrpg/08.png)
+![](img/tbrpg/08.png)
 
 Sample Character Setup
 ----------------------

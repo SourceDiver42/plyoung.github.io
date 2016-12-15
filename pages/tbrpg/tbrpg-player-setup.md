@@ -15,7 +15,7 @@ Player and party setup.The player and party settings can be found in Blox Game S
 Default Party
 -------------
 
-The Default Party will be loaded when play testing a scene so you need to add at least one [character template](tbpg-char-templates) and associated [character prefab](tbpg-charfabs) to have a playable character in the scene while testing.
+The Default Party will be loaded when play testing a scene so you need to add at least one [character template](tbpg-char-templates.html) and associated [character prefab](tbpg-charfabs.html) to have a playable character in the scene while testing.
 
 Settings
 --------
