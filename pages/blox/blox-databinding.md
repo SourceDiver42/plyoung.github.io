@@ -16,6 +16,14 @@ You will normally interact with this system when another requires it. When you n
 
 ![](img/blox/26.png)
 
+Properties and settings which requires a bind will give you the option to select an existing data provider or to add/ edit one.
+
+Data Providers can be shared between binds. Any providers created can be selected from a list. Note that you can group and order data providers by using "/" as a 'path separator', for example 'Player/Level'.
+
+You can also choose to not add a name to the new provider but then it will not be available in the list of defined provides and be shared with data binds.
+
+![](img/blox/35.png)
+
 Blackboard
 ----------
 
