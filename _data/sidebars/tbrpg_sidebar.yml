@@ -55,8 +55,6 @@ entries:
       url: /tbrpg-charfabs.html
       output: web, pdf
     - title: Skills
-      url: /tbrpg-skills.html
-      output: web, pdf
 
     - title: Map Transition
       url: /tbrpg-map-transition.html

@@ -89,4 +89,6 @@ entries:
     - title: Attributes
       url: /blox-attributes.html
       output: web, pdf
+    - url: /blox-skills.html
+      output: web, pdf
 

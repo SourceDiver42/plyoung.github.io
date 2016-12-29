@@ -1,16 +1,16 @@
 ---
-title: Turn Based RPG Skills
-keywords: unity3d, blox, visual scripting, programming, tactical, turn based rpg, tbrpg
-sidebar: tbrpg_sidebar
+title: Blox Skills
+keywords: unity3d, blox, visual scripting, programming, rpg, skills
+sidebar: blox_sidebar
 toc: false
-permalink: tbrpg-skills.html
-folder: tbrpg
+permalink: blox-skills.html
+folder: blox
 ---
 
 Skills
 ======
 
-
+..TODO..
 
 
 Meta Properties

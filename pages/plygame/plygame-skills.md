@@ -78,13 +78,13 @@ These options are shown when you chose `Delivery = Instant` under Activation.
 	+ SelectedDirection: Execution is in direction of selected target. Skill will not perform if no target selected.
 	+ AtClickPosition: Need the player to click on a spot where the skill will collect targets in a specified radius. 'Click' does not necessarily mean a mouse-button click. You could be holding the mouse cursor over an area and press any action key which would then register a "click" at the location.
 	+ AtSelected: Skill can only be used if a target is selected and is performed at the target's position.
-	+ MouseOver: This works like typical aRPG where mouse click on valid enemy would cast spell on it. It is similar to AtClickPosition but there must be a valid target under the mouse cursor. So it is position based like AtSelected without the need to have a target already selected.
+	+ MouseOver: This works like typical aRPG where mouse click on valid enemy would cast spell on it. It is similar to AtClickPosition but there must be a valid target under the mouse cursor. It is position based like AtSelected without the need to have a target already selected.
 	+ CameraForward: Executed in exact forward direction of camera.
 	+ CameraDirection: In direction of camera on the XZ plane, ignoring camera's tilt (up/ down).
 - **Hit Height %**: Determine the offset used to calculate where the hit was landed based on the height of the target.
 - **Hit Delay**: How long to delay (seconds) before the Hit Event is triggered. If this is 0 then the Hit Event will be called as soon as valid target(s) are collected. Can be useful when you are trying to synchronize effects and sounds with the skill user's animation.
 - **Max Targets Select**: What are the maximum amount of targets that the skill can collect.
-- **Max Distance from self**: Determine how far from the skill user the skill can trigger or affect targets. Direction based Skills will use this to find targets between the user and the distance while Location based Skills uses this to determine what the maximum valid distance from the user is that the Skill can be performed. So if you use 'AtSelected' but the targeted character is too far from the player then the Skill would not be performed.
+- **Max Distance from self**: Determine how far from the skill user the skill can trigger or affect targets. Direction based Skills will use this to find targets between the user and the distance while Location based Skills uses this to determine what the maximum valid distance from the user is that the Skill can be performed.
 - **Targteting Range**: is used to determine the angle at which a direction skill collect targets and creates it effects or the radius in which locational skill collect targets.
 
  
@@ -120,10 +120,10 @@ These options are shown when you chose `Delivery = Projectile` under Activation.
 	+ SelectedDirection: Execution is in direction of selected target. Skill will not perform if no target selected.
 	+ AtClickPosition: Need the player to click on a spot where the skill will collect targets in a specified radius. 'Click' does not necessarily mean a mouse-button click. You could be holding the mouse cursor over an area and press any action key which would then register a "click" at the location. The projectile execute in direction of targets.
 	+ AtSelected: Skill can only be used if a target is selected and is performed in the direction of target's position.
-	+ MouseOver: This works like typical aRPG where mouse click on valid enemy would cast spell on it. It is similar to AtClickPosition but there must be a valid target under the mouse cursor. So it is position based like AtSelected without the need to have a target already selected. Projectile executes in direction of collected target.
+	+ MouseOver: This works like typical aRPG where mouse click on valid enemy would cast spell on it. It is similar to AtClickPosition but there must be a valid target under the mouse cursor. It is position based like AtSelected without the need to have a target already selected. Projectile executes in direction of collected target.
 	+ CameraForward: Executed in exact forward direction of camera.
 	+ CameraDirection: In direction of camera on the XZ plane, ignoring camera's tilt (up/ down).
-- **Max Distance from self**: Determine how far from the skill user the skill can trigger or affect targets. Direction based Skills will use this to find targets between the user and the distance while Location based Skills uses this to determine what the maximum valid distance from the user is that the Skill can be performed. So if you use 'AtSelected' but the targeted character is too far from the player then the Skill would not be performed.
+- **Max Distance from self**: Determine how far from the skill user the skill can trigger or affect targets. Direction based Skills will use this to find targets between the user and the distance while Location based Skills uses this to determine what the maximum valid distance from the user is that the Skill can be performed. 
 - **Targteting Range**: is used to determine the angle at which a direction skill collect targets and creates it effects or the radius in which locational skill collect targets.
 
 #### Note on custom projectile logic ####
