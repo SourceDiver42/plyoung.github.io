@@ -58,6 +58,13 @@ The dialogue text also allows for stylising the text with special tags. You can 
 
 You can also specify a sprite that should be used as a **Portrait**. Note that if you choose this then your Dialogue Panel must include an object named "Portrait" and it must have a `UI > Image` component on it. The Vinoma main scene template includes this object in the GUI by default since version 1.0.5.
 
+A **typewriter effect** can be added to the dialogue text by adding the VinomaTypewriter component from `Component > Vinoma > Typewriter Effect` to the `VinomaGUI > Dialogue Panel > Text` object in the `projectData > Vinoma > MainScene` scene.  One is added by default since verison 1.2.2.
+
+Simply remove this component if you do not want the effect on the dialogue.
+
+- Delay is how to long to wait before adding next character/ word.
+- Per Word is whether to add character or words after each delay.
+
 ![](/img/vinoma/09.png)
 
 ### Label ###

@@ -36,7 +36,7 @@ The variables defined in the Blox editor will be available as properties in the 
 
 ![](img/blox/05.png)
 
-There variables can then be read/ set with the Variable Block set to "Blox" ad the name of the variable.
+These variables can then be read or set with the Variable Block type set to "Blox" and the name of the variable.
 
 ![](img/blox/06.png)
 
@@ -46,7 +46,7 @@ Next we have `Object Variables`. These are useful when you want to add data to a
 
 These variables are identified by the _{x}_ icon. They are added to a GameObject via menu: `Component > Blox > Object Variables`. 
 
-You will note that the Variable Block changes when working with Object Variables. It requires additional information, the GameObject which has the ObjectVariables component from where to get the named variable. It defaults to `self: GameObject`, meaning the GameObject on which this Blox is currently running but you can change this to another GameObject if needed.
+You will note that the Variable Block changes when working with Object Variables. It requires additional information, the GameObject which has the ObjectVariables component from where to get the named variable. It defaults to `self: GameObject`, meaning the GameObject on which this Blox is currently running but you can change this to another GameObject or Block which will return a GameObject, if needed.
 
 ![](img/blox/07.png)
 

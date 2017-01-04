@@ -316,7 +316,7 @@ The `parameters` entry can be used to add documentation describing each of the p
 Block Drawer
 ------------
 
-Creating a Block Drawer is optional and Blox will use the information from the BloxBlock Attribute to determine how to render the Block if you did not create any Block Drawer. The If, Loop, and may other custom Blocks do not use a Block Drawer. Of course if you want control over how the Block is drawn or if you need the sesr to provide values for Block properties (public fields) then a Block Drawer is needed.
+Creating a Block Drawer is optional and Blox will use the information from the BloxBlock Attribute to determine how to render the Block if you did not create any Block Drawer. The If, Loop, and many other custom Blocks do not use a Block Drawer. Of course if you want control over how the Block is drawn or if you need the sesr to provide values for Block properties (public fields) then a Block Drawer is needed.
 
 The Block Drawer is an editor-side script. That means it must go in a folder or sub-folder of a folder named `Editor`. The Block drawer must derive from `BloxBlockDrawer` and use the `BloxBlockDrawerAttribute` to describe which Blocks it is a drawer for.
 

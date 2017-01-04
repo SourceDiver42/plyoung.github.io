@@ -10,7 +10,7 @@ folder: blox
 Skills
 ======
 
-..TODO..
+**This system is under development and not ready for use**
 
 
 Meta Properties

@@ -10,9 +10,11 @@ folder: blox
 Attributes
 ==========
 
+**This system is under development and not ready for use**
+
 ![](img/blox/33.png)
 
-This section provides a way to define Attributes. These are normally used to track data about a character; its Health, Attributes, Stats, Talents, etc. You only define attributes here and they are not automatically bound to any of your game characters since Blox Core has no concept of what characters are. This system mainly exist to be used by plugins which binds these definitions to characters or other objects as needed. 
+This system provides a way to define Attributes. These are normally used to track data about a character; its Health, Attributes, Stats, Talents, etc. You only define attributes here and they are not automatically bound to any of your game characters since Blox Core has no concept of what characters are. This system mainly exist to be used by plugins which binds these definitions to characters or other objects as needed. 
 
 An attribute consist of a Value and a Max. These are Float values. The Value can never go beyond the Max. Neither can go below 0. Attributes can be used to define a character Health, Level, Experience, Talent level, Intelligence, Strength, etc. It is used for basically anything which would be considered the character's stats.
 
