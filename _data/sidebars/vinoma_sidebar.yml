@@ -33,3 +33,6 @@ entries:
     - title: Actions
       url: /vinoma-actions.html
       output: web, pdf
+    - title: Advanced
+      url: /vinoma-advanced.html
+      output: web, pdf

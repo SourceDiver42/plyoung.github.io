@@ -1,6 +1,6 @@
 ---
 title: Vinoma Guides
-keywords: unity3d, visual noval, game maker
+keywords: unity3d, visual novel, game maker
 sidebar: vinoma_sidebar
 toc: false
 permalink: vinoma-guides.html

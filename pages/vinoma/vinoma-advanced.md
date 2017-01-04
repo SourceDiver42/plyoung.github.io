@@ -1,6 +1,6 @@
 ---
 title: Vinoma Advanced
-keywords: unity3d, visual noval, game maker
+keywords: unity3d, visual novel, game maker
 sidebar: vinoma_sidebar
 toc: false
 permalink: vinoma-advanced.html
@@ -26,3 +26,4 @@ void SetText(string text);
 // called after the dialogue is made visible and conversation about to start
 void Clear();
 ```
+

@@ -1,6 +1,6 @@
 ---
 title: Vinoma Actions
-keywords: unity3d, visual noval, game maker
+keywords: unity3d, visual novel, game maker
 sidebar: vinoma_sidebar
 toc: false
 permalink: vinoma-actions.html
