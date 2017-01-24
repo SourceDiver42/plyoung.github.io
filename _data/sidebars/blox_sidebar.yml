@@ -86,6 +86,3 @@ entries:
     - title: Area Trigger
       url: /blox-area-trigger.html
       output: web, pdf
-    - title: Managed Images
-      url: /blox-image-manager.html
-      output: web, pdf
