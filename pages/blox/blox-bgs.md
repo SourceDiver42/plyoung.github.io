@@ -19,7 +19,8 @@ Blox includes various commonly needed game systems referred to as the Blox Game 
 - [Window Manager](blox-window-manager.html): Helps manage visibility of groups of UI elements.
 - [UI Updaters](blox-ui-updaters.html): are used to automatically update UI Elements with values or to set values in bound properties when the player make a change in a UI element like a text field, toggle, or slider.
 - [Area Trigger](blox-area-trigger.html): The Area Trigger will trigger a Blox Event when an object in the specified layer interacts with it.
-- [Attributes](blox-attributes.html): For defining things like character stats, attributes, and other properties and relation between them.
+
+<!-- [Attributes](blox-attributes.html): For defining things like character stats, attributes, and other properties and relation between them.-->
 
 
 <!--
