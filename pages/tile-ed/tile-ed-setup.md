@@ -79,7 +79,7 @@ Props are non-tile objects but objects you might want to place with the assistan
 
 Props are very similar in setup to Simple Tiles. You simply drag and drop the prefabs into the block marked "drop props here". You can also add the random variation prefab(s) to each prop.
 
-When a prop is placed the pivot point will be used to determine the position. If for example you created a barrel or crate and want it to sit flush with the floor then the pivot should be at the bottom of the object and not its centre, else it will poke half way into the floor. You can still fix badly aligned props with the prop tool's move and rotate gizmos but it is better to work with properly created art so that you save on having to fix problem areas which could have bene avoided.
+When a prop is placed the pivot point will be used to determine the position. If for example you created a barrel or crate and want it to sit flush with the floor then the pivot should be at the bottom of the object and not its centre, else it will poke half way into the floor. You can still fix badly aligned props with the prop tool's move and rotate gizmos but it is better to work with properly created art so that you save on having to fix problem areas which could have been avoided.
 
 ![](/img/tile-ed/06.png)
 

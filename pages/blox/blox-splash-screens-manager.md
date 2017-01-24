@@ -20,7 +20,9 @@ The 1st screen simply contains a logo image while the other two each has some te
 
 Add entries to the screens list via the [+] button, then drag-and-drop each screen into the provided field. Next you need to choose under which condition that screen will be hidden and the next shown. When the game starts all screens are hidden and the 1st shown. Then the rules are checked to decide when to hide the 1st and show the 2nd, and so on.
 
-The **auto unload** option will autmatically unload the scene in which the splash sreen manager object is or delete the GameObject it is on, depending on the option you chose, when the splsah screens are done showing.
+The **auto unload** option will automatically unload the scene in which the splash screen manager object is or delete the GameObject it is on, depending on the option you chose, when the splash screens are done showing.
+
+**Min show-time** can be used to prevent the splash screens from flickering in and out when you are simply using them as a type of load screen during startup. This is only really useful when you have a last screen watching for Bootstrap.IsDone. It will ignore the "player can skip" option on the last screen but you would not have this enabled in this case. It takes actual load time into consideration and do not add this artificial number in addition to time it already took to load. It is simply a minimum to wait if loading was 'too fast'.
 
 There are 3 types of rules and also the option to allow the player to skip a screen. "Player can skip" basically means the player can press any key or mouse button to skip the screen.
 

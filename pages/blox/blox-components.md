@@ -38,3 +38,12 @@ Follows the target object.
 `Component > Blox > Helpers > Sound Volume Updater`
 
 Add this component to any GameObject that has an AudioSource component on it to have it take care of the volume adjustment of that AudioSource.
+
+## Trigger Blox Event on Click
+
+`Component > Blox > Helpers > Trigger Blox Event on Click`
+
+Triggers a Blox Event when Button is clicked. This components allows you to set values which will be send to send the triggered event similar to how the Trigger Event Block works.
+
+The sent values will be available in the triggered Event as Event variables named param0, param1, param2, etc.
+
