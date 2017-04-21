@@ -44,7 +44,7 @@ The text can include the names of variables to insert the values of the variable
 You may also use a variable for the name change text but you must leave a space between the opening `{` and `_` and closing `_` and `}` , ex
 
 ```text
-{ _name_ } This line of text will also change the name to whatever te value of the name variable is.
+{ _name_ } This line of text will also change the name to whatever the value of the name variable is.
 ```
 
 The dialogue text also allows for stylising the text with special tags. You can read about these tags in the [Unity Documentation](http://docs.unity3d.com/Manual/StyledText.html).
@@ -94,9 +94,9 @@ For each Button field you add the following options are available.
 - **Text** to display on the button. The text can include the names of variables to insert the values of the variables in the place of the variable name. This is done by using the following format in the text ` _variable-name_ `. Notice that the opening ` _` has a space in front of it. The closing `_ ` must have a space after it if more text follows. Ex. `His name was _name_`
 - **Action** to take when the button is clicked. The action can be be...
 	* None - move to the next action
-	* Goto - to go to the specified location in the scene or another scene
-	* Variable - to change the value of a variable. The first field is the name of the variable, followed by the operation to apply to the variable and finally the value to use in the operation. The next action will be executed after the variable is modified.
-	* Switch - to change the state of a switch The next action will be executed after the switch is modified.
+	* Goto - to go to the specified location in the scene or another scene (see Branch action below for more on this)
+	* Variable - to change the value of a variable. The first field is the name of the variable, followed by the operation to apply to the variable and finally the value to use in the operation. The next action will be executed after the variable is modified. (see Variable action below for more on this)
+	* Switch - to change the state of a switch The next action will be executed after the switch is modified (see Switch action below for more on this)
 
 The **timeout** option allows you to specify which button should be chosen by default if the buttons was shown for a certain amount of time (in seconds). With it enabled you will see a new toggle appear in each button you defined.
 
@@ -107,8 +107,8 @@ This action is used to divert action execution to another area in the scene or a
 You need to click the [+] button to add branches.
 
 - **Goto** is where the branch should lead to if all its conditions where met.
-	* Label - go to named label in current scene
-	* Scene - go to start of named scene or optionally (2nd text field) a label in that scene
+	* Label - go to named label in current scene. You may also enter the name of a variable here by adding "@" in front of the name to indicate that you are passing the name of a variable which' value will contain the name of a Label. Ex "@variable-name"
+	* Scene - go to start of named scene or optionally (2nd text field) a label in that scene. You may also enter the names of a variables here by adding "@" in front of the name to indicate that you are passing the name(s) of variables which' values will contain the name of Scene and/or Label.
 	* Scene Top - go to top of current scene (1st action)
 	* Scene End - go to end of current scene (after last action)
 - **If** is the condition(s) that should be checked. Press the [+] button to add a condition. You can either check if a variable has a certain value or if a switch is in a specific state.
@@ -116,6 +116,8 @@ You need to click the [+] button to add branches.
 ### Hotspots ###
 
 Hotspots works almost similar to Buttons but rather than pressing a button the player have to click on an invisible rectangular area that you've defined. You would normally use this together with a Background. For example, you might show a background of a hallway with doors and create a hotspot over one of the doors which, when clicked, will change the active scene.
+
+Note: Same rules applying to Buttons do for Hotspots in the Hotspot editor. So you can use the @variable-name format there too for Goto and Variable related options.
 
 **Target** is the Hotspots Overlay to enable or disable. The list will be empty if you did not create any hotspots yet. Use the Hotspots editor to create overlays.
 
@@ -218,7 +220,7 @@ Allows you to change the Sprite of an object that has a SpriteRenderer Component
 
 **Sprite** is the sprite image to set the target to. If you select "none" here then the target's image will be removed.
 
-You can also choose that the image fade in (or out if Sprite is none). Set **Fade** to 0 to disable this. Finally you can select **Wait** if this actio's fade should complete before the next action is executed.
+You can also choose that the image fade in (or out if Sprite is none). Set **Fade** to 0 to disable this. Finally you can select **Wait** if this action's fade should complete before the next action is executed.
 
 Media
 -----
@@ -283,7 +285,7 @@ This action is useful when debugging since it is used to write messages to the U
 
 ### Script ###
 
-Is used to invoke a function in one of your scripts. The script must be on the `CustomScripts` object in the `Assets/projectData/vinoma/MainScene` Unity scene.
+Is used to invoke a function in one of your scripts. The script must be on the `CustomScripts` object in the `Assets/projectData/vinoma/MainScene` Unity scene. You may also enter the name of a variable here by adding "@" in front of the name to indicate that you are passing the name of a variable which' value will contain the name of a function. Ex "@variable-name".
 
 ### Switch ###
 
@@ -291,17 +293,19 @@ Is used to set the state of a switch. Other actions, like the Branch action, mig
 
 ### Variable ###
 
-Is used to set or change the value of a variable. The value can be either a string, like a name, or a number. Other actions, like the Branch action, might later read the variable's value to determine what to do next.
+Is used to set or change the value of a variable. The value can be either a string (like a name) or a number. Other actions, like the Branch action, might later read the variable's value to determine what to do next.
 
 - **Name** is the name of the variable.
 - **Operator** is what you want to do with the value of the variable.
-	* Set - will set then value to the one specified
+	* Set - will set then value to the one specified (could be either string or number)
 	* Append - will append the given value to the end of whatever the variable's value might already be and assume you are working with a string value.
 	* Add - will add the given value and assume you are working with numbers
 	* Subtract - will subtract the given value from the variable's current value and assume you are working with numbers.
 	* Multiply - will multiply the given value with the variable's current value and assume you are working with numbers.
 	* Divide - will divide the variables current value by the given value and assume you are working with numbers.
+- **Value** the value to apply via operator. Note that you can pass in the value of another variable by providing the name of a variable. Append "@" in front of the name to tell Vinoma it is a variable name you entered and not a string value. See image below for example; to add the value from variable "A" to that of variable "B".
 
+![](/img/vinoma/10.png)
 
 
 
