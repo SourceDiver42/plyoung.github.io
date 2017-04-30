@@ -14,7 +14,7 @@ The UI Updater makes it easier to manage the values on UI Elements by setting up
 
 These components can be found under menu: `Component > Vinoma > GUI` and should be placed on the same object for which it needs to update the related Unity UI component (or read values from to update a Vinoma switch or variable's value).
 
-Some of the updaters work in both directions. That is, if the player enter some text into the input field the linked Vinoma Variable's value will be updated too.
+Some of the updaters work in both directions. That is, if the player enter some text into the input field the linked Vinoma Variable's value will be updated with it. Choose the `twoWayLink` option to enable this.
 
 For each of these components you must set the `variableName` or `switchName` to the name of a Vinoma Switch or Variable to link to. `target` is the Unity UI component which must be linked to a Switch or Variable.
 
