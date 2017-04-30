@@ -33,6 +33,9 @@ entries:
     - title: Actions
       url: /vinoma-actions.html
       output: web, pdf
+    - title: UI Updaters
+      url: /vinoma-ui-updaters.html
+      output: web, pdf
     - title: Advanced
       url: /vinoma-advanced.html
       output: web, pdf
