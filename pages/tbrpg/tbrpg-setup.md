@@ -32,6 +32,10 @@ This scene should be set to auto-load in the Blox Scenes Setup. This is done by 
 
 ![](img/tbrpg/01.png)
 
+
+TODO: Talk about important objects which must be in startup scene, like the Unity EventSystem object.
+
+
 Game Maps/ Levels
 -----------------
 
