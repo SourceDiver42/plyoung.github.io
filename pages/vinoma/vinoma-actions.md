@@ -95,7 +95,7 @@ For each Button field you add the following options are available.
 - **Action** to take when the button is clicked. The action can be be...
 	* None - move to the next action
 	* Goto - to go to the specified location in the scene or another scene (see Branch action below for more on this)
-	* Variable - to change the value of a variable. The first field is the name of the variable, followed by the operation to apply to the variable and finally the value to use in the operation. The next action will be executed after the variable is modified. (see Variable action below for more on this)
+	* Variable - to change the value of a variable. The first field is the name of the variable, followed by the operation to apply to the variable and finally the value to use in the operation. The next action will be executed after the variable is modified. (see Variable action below for more on this). See the Variable Action below for more information.
 	* Switch - to change the state of a switch The next action will be executed after the switch is modified (see Switch action below for more on this)
 
 The **timeout** option allows you to specify which button should be chosen by default if the buttons was shown for a certain amount of time (in seconds). With it enabled you will see a new toggle appear in each button you defined.
@@ -303,7 +303,9 @@ Is used to set or change the value of a variable. The value can be either a stri
 	* Subtract - will subtract the given value from the variable's current value and assume you are working with numbers.
 	* Multiply - will multiply the given value with the variable's current value and assume you are working with numbers.
 	* Divide - will divide the variables current value by the given value and assume you are working with numbers.
+	* Random - will return a random value between the two values given and assumes you are working with numbers. It will return a whole number only if both numbers you enter are whole numbers. If you meant to use decimal/float numbers then enter one of them with a decimal point,even if you need to add ".0", example "0.0 <-> 1" will return a random decimal number between 0.0 and 1.0 while "0 <-> 3" would return could return a random whole number from 0 to 3, that is "0, 1, 2, or 3".
 - **Value** the value to apply via operator. Note that you can pass in the value of another variable by providing the name of a variable. Append "@" in front of the name to tell Vinoma it is a variable name you entered and not a string value. See image below for example; to add the value from variable "A" to that of variable "B".
+- **Value2** is needed when you choose Random for example. Here too you may pass the value from a variable as explained above.
 
 ![](/img/vinoma/10.png)
 
