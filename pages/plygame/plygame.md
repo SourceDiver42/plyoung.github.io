@@ -22,12 +22,11 @@ An API exposes features that advanced developers can use to extend and add to pl
 
 **Supported build targets**
 
-- Unity 5.3 or later
 - Stand-alone builds for Windows, Linux and OSX
 
 **Other builds**
 
-- Can build on iOS and Android but the included RPG controllers are not made for touch control
+- Can build on iOS and Android (not officially supported) but the included RPG controllers are not made for touch control
 - Any other platform not supported and no plans to add support
 
 For plugins and other additions to plyGame, visit the [plyGame plugins forum](http://forum.plyoung.com/c/plygame-blox/plugins).
