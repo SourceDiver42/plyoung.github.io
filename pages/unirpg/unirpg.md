@@ -117,7 +117,7 @@ As mentioned before, the players will play in what is called a UniRPG Game Scene
 
 The easiest and safest way to create a UnIRPG Game Scene is to use the toolbar button or from the menu: `assets -> create -> unirpg scene`.
 
-If yo uwould like to turn an existin gscene into a UniRPG Game Scene then simply drag the UniRPG prefab int oyour scene. The rpefab can be found in `Assets\UniRPG\Default Assets\Prefabs\`. You should remove any cameras that are presnet in the game scene since UniRPG manage [cameras](unirpg-database-cameras.html).
+If you would like to turn an existing scene into a UniRPG Game Scene then simply drag the UniRPG prefab into your scene. The prefab can be found in `Assets\UniRPG\Default Assets\Prefabs\`. You should remove any cameras that are present in the game scene since UniRPG manages [cameras](unirpg-database-cameras.html).
 
 All scenes that should be available to your game must appear in the UnIRPG Database, under `Main -> Project Scenes`. These include the interface (<abbr title="Graphical User Interface, like the Menu and HUD">GUI</abbr>) scenes, helper and UniRPG specific scenes, and the Game Scenes. You can add and remove Game Scenes in the editor window, further explained in the [Database][] section.
 
@@ -125,13 +125,13 @@ The 1<sup>st</sup> scene in the Game/Map Scenes will be the one loaded when the 
 
 ![](/img/unirpg/intro/db1.png)
 
-Now that everything is configured correctly you should be able to launch into your game map and run around, assuming you placed a floor and the player is not going to fall. Please read on to lean some basics of creating a game scene.
+Now that everything is configured correctly you should be able to launch into your game map and run around, assuming you placed a floor and the player is not going to fall. Please read on to learn some basics of creating a game scene.
 
 ![](/img/unirpg/intro/play2.png)
 
 ### Game Scene Basics ###
 
-You now know to use the UniRPG options to create a new Game Scene. This will add the UniRPG game object, with some component(s) on it, to the scene. Game scenes should not include any active cameras. Please look at the [Cameras](unirpg-database-cameras.html) documentation to se ehow you define the camera to be used in the game.
+You now know to use the UniRPG options to create a new Game Scene. This will add the UniRPG game object, with some component(s) on it, to the scene. Game scenes should not include any active cameras. Please look at the [Cameras](unirpg-database-cameras.html) documentation to see how you define the camera to be used in the game.
 
 Your game scene will need some kind of floor for the player and monsters to move on else they will be in an endless falling state. This floor can be anything that a CharacterController can collide with, for example the default Unity Terrain or a mesh object with a collider on.
 
